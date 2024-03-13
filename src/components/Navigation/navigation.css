@@ -1,0 +1,97 @@
+.navbar-wrapper .navbar {
+  position: fixed;
+  width: 100%;
+  padding: 10px 0;
+  z-index: 9;
+  transition: all 0.3s ease;
+}
+
+.navbar .container {
+  transition: 0.3s ease-in-out;
+  padding: 0;
+}
+
+.navbar.bg-active {
+  padding: 10px 20px;
+  background: #fff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  /* border-bottom: 1px solid rgba(255, 255, 255, 0.3); */
+}
+
+.navbar.bg-active .navbar-brand,
+.navbar.bg-active .navbar-nav a {
+  color: #000;
+}
+
+.navbar-wrapper .navbar-brand {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.navbar-nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 400;
+  font-size: 1rem;
+  padding: 5px 8px;
+  position: relative;
+}
+
+.navbar-nav a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #EC6E31;
+  border-radius: 50px;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-nav a:hover::after {
+  width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+  .navbar-nav {
+    background: #fff;
+    height: 100vh;
+    width: 100%;
+    padding: 40px 0 20px 0;
+    border-radius: 0 0 10px 10px;
+  }
+
+  button.navbar-toggler {
+    padding: 4px 8px;
+    background: #fff;
+    border-radius: 2px;
+  }
+
+  .navbar.bg-active button.navbar-toggler {
+    padding: 5px 10px;
+    border: 1px solid #bebebe;
+  }
+
+  button.navbar-toggler:focus {
+    color: #fff;
+    border: none;
+    outline: none;
+  }
+
+  /* button.navbar-toggler {
+    color: #fff;
+  } */
+
+  .navbar-nav a {
+    color: #000;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .navbar-wrapper .navbar {
+    padding: 10px 20px;
+  }
+}
