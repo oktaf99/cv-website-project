@@ -1,0 +1,526 @@
+.navbar-wrapper .navbar {
+  position: fixed;
+  width: 100%;
+  padding: 10px 0;
+  z-index: 9;
+  transition: all 0.3s ease;
+}
+
+.navbar .container {
+  transition: 0.3s ease-in-out;
+  padding: 0;
+}
+
+.navbar.bg-active {
+  padding: 10px 20px;
+  background: #fff;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.075);
+  /* border-bottom: 1px solid rgba(255, 255, 255, 0.3); */
+}
+
+.navbar.bg-active .navbar-brand,
+.navbar.bg-active .navbar-nav a {
+  color: #000;
+}
+
+.navbar-wrapper .navbar-brand {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.navbar-nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 400;
+  font-size: 1rem;
+  padding: 5px 8px;
+  position: relative;
+}
+
+.navbar-nav a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #ec6e31;
+  border-radius: 50px;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-nav a:hover::after {
+  width: 100%;
+}
+
+/* MODAL */
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  animation-name: fadeIn;
+  animation-duration: 0.4s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.modal-product {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  max-width: 850px;
+  min-width: 200px;
+  margin-top: 0;
+  width: 100%;
+  max-height: 450px;
+  height: 100%;
+  background: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  animation-name: slideIn;
+  animation-duration: 0.4s;
+  position: relative;
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+}
+
+@keyframes slideIn {
+  from {
+    margin-top: -50px;
+    opacity: 0;
+  }
+  to {
+    margin-top: 0;
+    opacity: 1;
+  }
+}
+
+.modal-product .modal-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-product .main-img {
+  max-width: 400px;
+  width: 100%;
+  max-height: 300px;
+  height: 100%;
+  object-fit: contain;
+  overflow: hidden;
+}
+
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+}
+
+.modal-body .img-detail {
+  max-width: 380px;
+  width: 100%;
+  object-fit: contain;
+}
+
+.modal-body h3 {
+  font-size: 4vh;
+  font-weight: 600;
+  color: #000;
+  margin: 0;
+}
+
+.modal-body p {
+  text-align: start;
+  font-size: 1rem;
+  line-height: 30px;
+  font-weight: 500;
+  color: #000;
+  margin: 0;
+}
+
+.modal-body span {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.modal-body .btn-modal {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+}
+
+.modal-body button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 1rem;
+  padding: 8px 15px;
+  border-radius: 5px;
+  background: #ec6e31;
+  color: #fff;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 3%;
+  right: 6%;
+}
+.closeBtn svg {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  position: fixed;
+  width: 32px;
+  height: 32px;
+  color: salmon;
+}
+
+/* FAQ SECTION */
+
+.faq {
+  min-height: 80vh;
+  width: 100%;
+  padding: 50px 0;
+}
+
+.accordion .accordion-body {
+  font-size: 15px;
+  line-height: 30px;
+}
+
+/* Subscribe Section */
+.wrapper #subscribe {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.subscribe-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+}
+
+#subscribe .subscribe-content h1 {
+  font-weight: 800;
+  color: #fff;
+  width: 70%;
+  margin-bottom: 15px;
+}
+
+#subscribe .subscribe-content p {
+  font-size: 15px;
+  color: #bebebe;
+  line-height: 25px;
+  width: 65%;
+  margin-bottom: 15px;
+}
+
+#subscribe .subscribe-content button {
+  font-size: 1rem;
+  padding: 12px 30px;
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+#subscribe .subscribe-content button:hover {
+  color: #fff;
+  background: #ec6e31;
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(6.3px);
+  -webkit-backdrop-filter: blur(6.3px);
+  transition: all 0.2s ease-in-out;
+}
+
+/* FOOTER SECTION */
+#footer {
+  min-height: 55vh;
+  width: 100%;
+  padding: 30px 0px;
+  display: flex;
+  position: relative;
+  background: #2b303a;
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 20px;
+}
+
+#footer h4,
+#footer h1 {
+  color: #fff;
+}
+
+.cv-name p {
+  width: 85%;
+  line-height: 30px;
+  font-size: 14px;
+  margin: 0;
+  color: #fff;
+}
+
+.address .icon {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+}
+
+.icon p {
+  margin: 0;
+  font-size: 14px;
+  color: #bebebe;
+}
+
+.icon svg {
+  width: 20px;
+  height: 20px;
+  color: #fff;
+}
+
+.links a {
+  text-decoration: none;
+  color: #bebebe;
+  transition: 0.3s ease;
+}
+
+.links a:hover {
+  color: #fff;
+  font-weight: 600;
+}
+
+.copyright {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 100%;
+  text-align: center;
+  transform: translate(-50%);
+  padding: 10px 0;
+  font-size: 14px;
+  color: #fff;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 992px) {
+  .navbar-nav {
+    background: #fff;
+    width: 100%;
+    padding: 40px 0 20px 0;
+    border-radius: 0 0 20px 20px;
+    border-bottom: 1px solid #bebebe;
+  }
+
+  .navbar.bg-active .navbar-nav {
+    box-shadow: 0;
+    border-bottom: none;
+  }
+
+  button.navbar-toggler {
+    padding: 4px 8px;
+    background: #fff;
+    border-radius: 2px;
+  }
+
+  .navbar.bg-active button.navbar-toggler {
+    padding: 5px 10px;
+    border: 1px solid #bebebe;
+  }
+
+  button.navbar-toggler:focus {
+    color: #fff;
+    border: none;
+    outline: none;
+  }
+
+  /* button.navbar-toggler {
+      color: #fff;
+    } */
+
+  .navbar-nav a {
+    color: #000;
+    font-size: 1.5rem;
+  }
+
+  .modal-product {
+    width: 90%;
+    height: 400px;
+  }
+
+  .modal-product .main-img {
+    width: 100%;
+    height: 100%;
+  }
+
+  #subscribe .subscribe-content h1 {
+    font-size: 2.6rem;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #subscribe .subscribe-content h1 {
+    font-size: 2.4rem;
+    width: 100%;
+  }
+
+  #subscribe .subscribe-content p {
+    width: 90%;
+  }
+
+  .modal-product {
+    gap: 0;
+    width: 70%;
+    max-height: 550px;
+    height: 100%;
+    padding: 10px 15px;
+  }
+
+  .modal-product .main-img {
+    max-width: 280px;
+    width: 100%;
+    height: 220px;
+  }
+
+  .modal-product .img-detail {
+    max-width: 280px;
+    width: 100%;
+  }
+
+  .modal-body .btn-modal {
+    bottom: 0%;
+  }
+
+  .closeBtn {
+    right: 10%;
+  }
+
+  .cv-name p {
+    width: 100%;
+  }
+
+  .accordion .accordion-button {
+    font-size: 15px;
+  }
+
+  .accordion .accordion-body {
+    font-size: 14px;
+    line-height: 25px;
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .navbar-wrapper .navbar {
+    padding: 10px 20px;
+  }
+
+  .modal-product {
+    gap: 0;
+    width: 85%;
+    max-height: 450px;
+    height: 100%;
+    padding: 10px 15px;
+  }
+
+  .accordion .accordion-button {
+    font-size: 14px;
+  }
+
+  #footer {
+    padding: 30px 10px;
+  }
+
+  .cv-name p {
+    font-size: 14px;
+    line-height: 25px;
+    width: 100%;
+  }
+
+  .copyright p {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .navbar-wrapper .navbar {
+    padding: 8px 10px;
+  }
+
+  .accordion .accordion-button {
+    font-size: 12px;
+    padding: 12px 15px;
+  }
+
+  .accordion .accordion-body {
+    font-size: 12px;
+    line-height: 20px;
+    padding: 12px 15px;
+  }
+
+  #subscribe .container {
+    padding: 0;
+  }
+
+  #subscribe .subscribe-content h1 {
+    font-size: 2rem;
+    width: 100%;
+  }
+
+  #subscribe .subscribe-content p {
+    font-size: 12px;
+    line-height: 20px;
+    width: 100%;
+  }
+
+  #subscribe .subscribe-content button {
+    font-size: 12px;
+    padding: 10px 20px;
+  }
+
+  #footer,
+  .wrapper #subscribe {
+    padding: 30px 10px;
+  }
+
+  .cv-name p {
+    font-size: 12px;
+    line-height: 25px;
+    width: 100%;
+  }
+
+  .links a {
+    font-size: 14px;
+  }
+
+  .copyright p {
+    font-size: 12px;
+  }
+}

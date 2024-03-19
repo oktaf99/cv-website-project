@@ -17,6 +17,8 @@ button Color = #EC6E31
 
 a {
   text-decoration:  none;
+  margin: 0;
+  padding: 0;
 }
 
 li {

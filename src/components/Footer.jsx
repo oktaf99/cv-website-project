@@ -2,13 +2,14 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-import HeroImg3 from "../../assets/img/hero3.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
-import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faMapPin } from "@fortawesome/free-solid-svg-icons";
 
-import "./footer.css";
-import "../../index.css";
+import HeroImg3 from "../assets/img/hero3.jpg";
+
+import "../styles/component.css";
 
 const Footer = () => {
   const buttonHandler = (url) => {
@@ -21,44 +22,48 @@ const Footer = () => {
       <section
         id="subscribe"
         style={{
-          backgroundImage: `url(${HeroImg3})`,
+          backgroundImage: `url(${HeroImg3}), linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6))`,
           backgroundSize: "cover",
+          backgroundBlendMode: "overlay",
           width: "100%",
-          height: "300px",
+          height: "100%",
         }}
       >
-        <div className="subscribe-content text-center">
-          <h1
-            data-aos="fade-up"
-            data-aos-duration="800"
-            data-aos-easing="ease-in-out"
-          >
-            Ready to find the parts you need ?
-          </h1>
-          <p
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
-          >
-            Browse our online catalog and place your order today. With our wide
-            selection, competitive prices, and fast shipping, you'll have your
-            heavy vehicles back on the road in no time.
-          </p>
-          <button
-            data-aos="fade-up"
-            data-aos-duration="1200"
-            data-aos-easing="ease-in-out"
-            onClick={() => buttonHandler("https://wa.me/+6285811482792/")}
-          >
-            Contact Us
-          </button>
-        </div>
+        <Container>
+          <div className="subscribe-content text-center">
+            <h1
+              data-aos="fade-up"
+              data-aos-duration="800"
+              data-aos-easing="ease-in-out"
+              className="display-5"
+            >
+              Ready to find the parts you need ?
+            </h1>
+            <p
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
+              Browse our online catalog and place your order today. With our
+              wide selection, competitive prices, and fast shipping, you'll have
+              your heavy vehicles back on the road in no time.
+            </p>
+            <button
+              data-aos="fade-up"
+              data-aos-duration="1200"
+              data-aos-easing="ease-in-out"
+              onClick={() => buttonHandler("https://wa.me/+6285811482792/")}
+            >
+              Contact Us
+            </button>
+          </div>
+        </Container>
       </section>
 
       <section id="footer">
         <Container>
           <Row className="footer-wrapper row-cols-1 row-cols-lg-3 row-cols-md-2 pb-5">
-            <Col className="col-lg-7 col-md-8 cv-name d-flex flex-column gap-2">
+            <Col className="col-lg-7 col-md-8 cv-name d-flex flex-column gap-2 px-0">
               <h1>Nama Cv</h1>
               <p>
                 We offer a comprehensive selection of high-quality spare parts,
@@ -67,7 +72,7 @@ const Footer = () => {
                 performing at their best.
               </p>
             </Col>
-            <Col className="col-lg-3 col-md-1 links d-flex flex-column gap-3">
+            <Col className="col-lg-2 col-md-1 links d-flex flex-column gap-lg-3 gap-2 px-0">
               <h4>Navigation</h4>
               <Link to="/" reloadDocument>
                 Home
@@ -82,19 +87,19 @@ const Footer = () => {
                 Contact
               </Link>
             </Col>
-            <Col className="col-lg-2 address d-flex flex-column gap-3">
-              <h4>Address</h4>
+            <Col className="col-lg-3 address d-flex flex-column gap-3 px-0">
+              <h4>Contact</h4>
               <div className="icon">
-                <FontAwesomeIcon icon={faLocationDot} />
-                <p>Kp. Rawabadung</p>
+                <FontAwesomeIcon icon={faEnvelope} />
+                <p>cvproject@gmail.com</p>
               </div>
               <div className="icon">
                 <FontAwesomeIcon icon={faPhone} />
                 <p>+62887234234</p>
               </div>
               <div className="icon">
-                <FontAwesomeIcon icon={faPhone} />
-                <p>+62887234234</p>
+                <FontAwesomeIcon icon={faMapPin} />
+                <p>North Jakarta, Jakarta</p>
               </div>
             </Col>
           </Row>

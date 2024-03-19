@@ -3,8 +3,8 @@ import { Routes, Route } from "react-router-dom";
 
 import Aos from "aos";
 
-import Navigation from "./components/Navigation/Navigation";
-import Footer from "./components/Footer/Footer";
+import Navigation from "./components/Navigation"
+import Footer from "./components/Footer"
 
 import Homepage from "./pages/Homepage";
 import ProductPage from "./pages/ProductPage";

@@ -1,7 +1,8 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 
-import Helmet from "../components/UI/Helmet";
+import Helmet from "../components/Helmet";
+import Faq from "../components/Faq"
 import BgCommonSection from "../assets/img/1.jpg";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -36,6 +37,9 @@ const ContactPage = () => {
           
         </Container>
       </section>
+
+      {/* Faq Section */}
+      <Faq />
     </Helmet>
   );
 };

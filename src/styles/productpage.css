@@ -15,9 +15,18 @@
 
 /* Card Product */
 .product {
-  min-height: 100vh;
+  min-height: 150vh;
   width: 100%;
   padding: 50px 0;
+}
+
+.dropdown .dropdown-toggle {
+  background: #ec6e31;
+  padding: 10px 15px;
+}
+
+.dropdown button {
+  font-size: 1rem;
 }
 
 .dropdown-toggle button {
@@ -31,13 +40,19 @@
 }
 
 .btn-category {
-  width: 100%;
-  padding: 8px 0;
+  width: 150px;
+  border-radius: 5px;
+  padding: 10px;
 }
 
 .dropdown .dropdown-menu.show {
-  padding: 0;
-  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  column-gap: 10px;
+  row-gap: 5px;
+  place-items: center;
+  width: 350px;
+  padding: 10px;
   border-radius: 8px;
   z-index: 1;
   animation-name: fade;
@@ -54,7 +69,7 @@
 }
 
 .btn-active {
-  background: #0A58CA;
+  background: #ec6e31;
   color: #fff;
 }
 
@@ -76,6 +91,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 0;
+  overflow: hidden;
 }
 
 .productImg img {
@@ -90,19 +107,33 @@
 }
 
 .cardBody {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   bottom: 0;
-  left: 0;
-  width: 100%;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
-  padding: 15px;
+  left: 50%;
+  transform: translate(-50%);
+  width: 70%;
+  height: 70px;
+  z-index: 1;
+  border-radius: 10px 10px 0 0;
+  /* background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)); */
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.29);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  border: 1px solid #bebebe;
+  border-bottom: none;
+  padding: 10px;
 }
 
 .cardBody h5 {
-  font-size: 1.2rem;
-  color: #fff;
-  font-weight: 500;
-  line-height: 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #000;
+  line-height: 25px;
   margin: 0;
 }
 
@@ -121,11 +152,48 @@
 }
 
 .btn-load button {
-  padding: 10px 60px;
+  padding: 10px 30px;
   border-radius: 50px;
   margin-bottom: 30px;
+  background: #ec6e31;
+  color: #fff;
 }
 
+/* Responsive */
+
+@media screen and (max-width: 1075px) {
+  .product .wrapper {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 12px;
+  }
+
+  .wrapper .card {
+    height: 350px;
+    border-radius: 10px;
+  }
+
+  .productImg img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 230px;
+  }
+
+  .cardBody {
+    height: 50px;
+    padding: 8px;
+    border-radius: 6px 6px 0 0;
+  }
+
+  .cardBody h5 {
+    font-size: 14px;
+  }
+
+  .cardBody button {
+    font-size: 10px;
+  }
+}
 
 @media screen and (max-width: 992px) {
   .product-title p {
@@ -144,41 +212,118 @@
     justify-content: center;
     align-items: center;
   }
-}
 
-@media screen and (max-width: 568px) {
-  .product-title p {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 350px) {
   .product .wrapper {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 12px;
   }
 
   .wrapper .card {
-    height:200px;
+    height: 300px;
+    border-radius: 10px;
   }
 
   .productImg img {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    max-height: 180px;
+    height: 100%;
+  }
+
+  .cardBody {
+    width: 80%;
+    height: 50px;
+    padding: 8px;
+    border-radius: 6px 6px 0 0;
+  }
+
+  .cardBody h5 {
+    font-size: 14px;
+  }
+
+  .cardBody button {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .product {
+    padding: 50px 15px;
+  }
+
+  .product-title p {
+    width: 100%;
+  }
+
+  .product .wrapper {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 12px;
+  }
+
+  .wrapper .card {
+    height: 250px;
+    border-radius: 10px;
+  }
+
+  .productImg img {
+    height: 130px;
+  }
+
+  .cardBody {
+    width: 80%;
+    height: 50px;
+    padding: 8px;
+    border-radius: 6px 6px 0 0;
+  }
+
+  .cardBody h5 {
+    font-size: 14px;
+  }
+
+  .cardBody button {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .dropdown button {
+    font-size: 12px;
+  }
+
+  .product .wrapper {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 8px;
+  }
+
+  .wrapper .card {
+    height: 150px;
+    border-radius: 10px;
+  }
+
+  .productImg img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100px;
+    width: 100%;
     max-height: 150px;
     height: 100%;
   }
 
   .cardBody {
-    padding: 10px;
+    height: 35px;
+    padding: 8px;
+    border-radius: 6px 6px 0 0;
   }
 
   .cardBody h5 {
-    font-size: 1rem;
+    font-size: 10px;
+    line-height: 15px;
   }
 
   .cardBody button {
-    font-size: 10px;  
+    font-size: 10px;
   }
 }
-

@@ -3,8 +3,9 @@ import { Container, Row, Col, Dropdown } from "react-bootstrap";
 import { spareParts } from "../assets/data";
 
 import BgCommonProduct from "../assets/img/4.jpg";
-import Helmet from "../components/UI/Helmet";
-import ModalProduct from "../components/Modal/ModalProduct";
+import Helmet from "../components/Helmet";
+import ModalProduct from "../components/ModalProduct";
+import Faq from "../components/Faq";
 
 import "../styles/productpage.css";
 
@@ -34,9 +35,9 @@ const Product = () => {
       setDataProduct(filteredData);
     }
 
-    if (selectTab === "brake") {
+    if (selectTab === "automation") {
       const filteredData = spareParts.filter(
-        (item) => item.category === "Brake Systems"
+        (item) => item.category === "Automation"
       );
       setDataProduct(filteredData);
     }
@@ -78,16 +79,12 @@ const Product = () => {
         </div>
       </section>
       {/* Product Card */}
-      <section className="product px-lg-0 px-md-3 px-sm-4 px-4">
-        <Container className="d-flex flex-column justify-content-center gap-4">
+      <section className="product px-lg-0 px-md-3 px-sm-4 px-3">
+        <Container className="d-flex flex-column justify-content-center gap-3 gap-lg-4">
           <Row>
-            <div className="category-wrapper d-flex align-items-end justify-content-end">
+            <div className="category-wrapper d-flex align-items-start justify-content-start px-0">
               <Dropdown>
-                <Dropdown.Toggle
-                  variant="primary"
-                  id="dropdown-basic"
-                  className="px-3 py-2"
-                >
+                <Dropdown.Toggle id="dropdown-basic" className="btn-danger">
                   Sort by Category
                 </Dropdown.Toggle>
 
@@ -117,12 +114,12 @@ const Product = () => {
                     Coupling
                   </button>
                   <button
-                    onClick={() => setSelectTab("brake")}
+                    onClick={() => setSelectTab("automation")}
                     className={`btn-category ${
-                      selectTab === "brake" ? "btn-active" : ""
+                      selectTab === "automation" ? "btn-active" : ""
                     }`}
                   >
-                    Brake
+                    Automation
                   </button>
                   <button
                     onClick={() => setSelectTab("suspension")}
@@ -143,7 +140,7 @@ const Product = () => {
                 data-aos="fade-zoom-in"
                 data-aos-delay="50"
                 data-aos-duration="1000"
-                className="card shadow"
+                className="card shadow-sm"
                 onClick={() => showModalHandler(parts.id)}
               >
                 <div className="productImg">
@@ -151,16 +148,13 @@ const Product = () => {
                 </div>
                 <div className="cardBody">
                   <h5>{parts.name}</h5>
-                  <button>Read more</button>
                 </div>
               </Col>
             ))}
           </Row>
-          <div className="btn-load text-center m-auto">
+          <div className="btn-load text-center m-auto mt-4">
             {nextItems < dataProduct.length && spareParts.length > 6 && (
-              <button onClick={loadMoreHandler} className="btn btn-primary">
-                Load more
-              </button>
+              <button onClick={loadMoreHandler}>Load more</button>
             )}
           </div>
         </Container>
@@ -168,6 +162,9 @@ const Product = () => {
           <ModalProduct setShowModal={setShowModal} activeID={activeID} />
         )}
       </section>
+
+      {/* Faq Section */}
+      <Faq />
     </Helmet>
   );
 };

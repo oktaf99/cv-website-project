@@ -29,3 +29,42 @@
   object-fit: cover;
   border-radius: 20px;
 }
+
+.content-wrapper h1 {
+  font-weight: 400;
+  width: 100%;
+}
+
+.content-wrapper p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  color: gray;
+}
+
+
+@media screen and (max-width: 992px) {
+  .content-wrapper img {
+    height: 500px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .content-wrapper img {
+    height: 450px;
+  }
+
+  .content-wrapper p {
+    font-size: 14px;
+    line-height: auto;
+  }
+}
+@media screen and (max-width: 568px) {
+  .content-wrapper img {
+    height: 400px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .content-wrapper img {
+    height: 350px;
+  }
+}

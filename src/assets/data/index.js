@@ -1,7 +1,12 @@
+// Testimonial
 import People1 from "../img/testimonial/people-1.jpg";
 import People2 from "../img/testimonial/people-2.jpg";
 import People3 from "../img/testimonial/people-3.jpg";
-
+import People4 from "../img/testimonial/people-4.jpg";
+import People5 from "../img/testimonial/people-5.jpg";
+import People6 from "../img/testimonial/people-6.jpg";
+import People7 from "../img/testimonial/people-7.jpg";
+// Gear
 import Wpa from "../img/product/gear-revco/gear-wpa.jpeg";
 import Wps from "../img/product/gear-revco/gear-wps.jpeg";
 import Wpo from "../img/product/gear-revco/gear-wpo.jpeg";
@@ -10,15 +15,66 @@ import Wpda from "../img/product/gear-revco/gear-wpda.jpeg";
 import Fcl from "../img/product/gear-revco/coupling-fcl.jpeg";
 import Chain from "../img/product/gear-revco/coupling-chainCoupling.jpeg";
 import Jtc from "../img/product/gear-revco/coupling-jtc.jpeg";
+// Spesification Gear
 import GearDetail from "../img/product/gear-revco/gear-detail.jpeg";
 import WpdaDetail from "../img/product/gear-revco/wpda-detail.jpeg";
 import FclDetail from "../img/product/gear-revco/fcl-detail.jpeg";
 import JtcDetail from "../img/product/gear-revco/jtc-detail.jpeg";
 import ChainDetail from "../img/product/gear-revco/chain-detail.jpeg";
-
+// Gear2
+import Tr from "../img/product/gear-yuema/gear2-tr.jpeg";
+import Trf from "../img/product/gear-yuema/gear2-trf.jpeg";
+import Tf from "../img/product/gear-yuema/gear2-Tf.jpeg";
+import Tk from "../img/product/gear-yuema/gear2-tk.jpeg";
+import Tkaf from "../img/product/gear-yuema/gear2-tkaf.jpeg";
+import Trx from "../img/product/gear-yuema/gear2-trx.jpeg";
+import Tkb from "../img/product/gear-yuema/gear2-tkb.jpeg";
+import Tkm from "../img/product/gear-yuema/gear2-tkm.jpeg";
+import Mrv from "../img/product/gear-yuema/gear2-mrv.jpeg";
+// Specification gear Yuema
+import SpecTr from "../img/product/gear-yuema/spec-tr.jpeg";
+import SpecTrf from "../img/product/gear-yuema/spec-trf.jpeg";
+import SpecTf from "../img/product/gear-yuema/spec-tf.jpeg";
+import SpecTk from "../img/product/gear-yuema/spec-tk.jpeg";
+import SpecTkaf from "../img/product/gear-yuema/spec-tkaf.jpeg";
+import SpecTrx from "../img/product/gear-yuema/spec-trx.jpeg";
+import SpecTkb from "../img/product/gear-yuema/spec-tkb.jpeg";
+import SpecTkm from "../img/product/gear-yuema/spec-tkm.jpeg";
+import SpecMrv from "../img/product/gear-yuema/spec-mrv.jpeg";
+// Gear 3
+import Glm from "../img/product/gear-yuema2/gear3-g3lm.jpeg"
+import Gls from "../img/product/gear-yuema2/gear3-g3ls.jpeg"
+import Gl from "../img/product/gear-yuema2/gear3-g3l.jpeg"
+import Chcz from "../img/product/gear-yuema2/gear3-chcz.jpeg"
+import Chcf from "../img/product/gear-yuema2/gear3-chcf.jpeg"
+import Chcfhs from "../img/product/gear-yuema2/gear3-chcfhs.jpeg"
+import InputShaft from "../img/product/gear-yuema2/gear3-inputshaft.jpeg"
+import FootMounting from "../img/product/gear-yuema2/gear3-footmounting.jpeg"
+import Flange from "../img/product/gear-yuema2/gear3-flangemounting.jpeg"
+// Specification Gear 3
+import SpecGlm from "../img/product/gear-yuema2/spec-g3lm.jpeg"
+import SpecGls from "../img/product/gear-yuema2/spec-g3ls.jpeg"
+import SpecGl from "../img/product/gear-yuema2/spec-g3l.jpeg"
+import SpecChcz from "../img/product/gear-yuema2/spec-chcz.jpeg"
+import SpecChcf from "../img/product/gear-yuema2/spec-chcf.jpeg"
+import SpecChcfhs from "../img/product/gear-yuema2/spec-chcfhs.jpeg"
+import SpecInput from "../img/product/gear-yuema2/spec-inputshaft.jpeg"
+import SpecFoot from "../img/product/gear-yuema2/spec-footmounting.jpeg"
+import SpecFlange from "../img/product/gear-yuema2/spec-flangemounting.jpeg"
+// automation
+import Asda from "../img/product/automation/automation-asda.jpeg";
+import Dop from "../img/product/automation/automation-dop.jpeg";
+import Dpa from "../img/product/automation/automation-dpa.jpeg";
+import Dt from "../img/product/automation/automation-dt.jpeg";
+import Dvp from "../img/product/automation/automation-dvp.jpeg";
+import Ifd from "../img/product/automation/automation-ifd.jpeg";
+import Pmc from "../img/product/automation/automation-pmc.jpeg";
+import Roe from "../img/product/automation/automation-roe.jpeg";
+import Vfd from "../img/product/automation/automation-vfd.jpeg";
 
 import { faAward } from "@fortawesome/free-solid-svg-icons";
 import { faTruckFast } from "@fortawesome/free-solid-svg-icons";
+import { faHandHoldingDollar } from "@fortawesome/free-solid-svg-icons";
 
 export const navLinks = [
   {
@@ -51,14 +107,14 @@ export const serviceFeature = [
     desc: "We source our parts from trusted manufacturers known for their quality and reliability.",
   },
   {
-    id: 3,
+    id: 2,
     icon: faTruckFast,
     feature: "Fast Shipping",
     desc: "We know that time is of the essence when it comes to vehicle maintenance and repairs. ",
   },
   {
-    id: 4,
-    icon: faAward,
+    id: 3,
+    icon: faHandHoldingDollar,
     feature: "Competitive Prices",
     desc: "We offer competitive prices on all of our parts, so you can save money without sacrificing quality.",
   },
@@ -123,27 +179,183 @@ export const spareParts = [
   },
   {
     id: 9,
-    category: "Coupling",
-    name: "Chain Coupling",
-    image: Chain,
-    size: "saasd",
-    ration: "asdasd",
+    category: "Automation",
+    name: "VFD: Inverter Delta",
+    image: Vfd,
   },
   {
     id: 10,
-    category: "Coupling",
-    name: "Chain Coupling",
-    image: Chain,
-    size: "saasd",
-    ration: "asdasd",
+    category: "Automation",
+    name: "DT: Temperature Controllers",
+    image: Dt,
   },
   {
     id: 11,
-    category: "Coupling",
-    name: "Chain Coupling",
-    image: Chain,
-    size: "saasd",
-    ration: "asdasd",
+    category: "Automation",
+    name: "ASDA: Servo Drivers & Motor",
+    image: Asda,
+  },
+  {
+    id: 12,
+    category: "Automation",
+    name: "DPA-Pressure Sensor",
+    image: Dpa,
+  },
+  {
+    id: 13,
+    category: "Automation",
+    name: "DVP: Programmable Logic Controller",
+    image: Dvp,
+  },
+  {
+    id: 14,
+    category: "Automation",
+    name: "DOP: B-Human Machine Interface",
+    image: Dop,
+  },
+  {
+    id: 15,
+    category: "Automation",
+    name: "ROE-Rotary Optical Encoder",
+    image: Roe,
+  },
+  {
+    id: 16,
+    category: "Automation",
+    name: "IFD-Communication Module",
+    image: Ifd,
+  },
+  {
+    id: 17,
+    category: "Automation",
+    name: "DVP/CliQ/PMC-Industrial Power Supply",
+    image: Pmc,
+  },
+  {
+    id: 18,
+    category: "Gear",
+    name: "Helical Gear Bevel TR",
+    image: Tr,
+    image2: SpecTr,
+  },
+  {
+    id: 19,
+    category: "Gear",
+    name: "Helical Gear Bevel TRF",
+    image: Trf,
+    image2: SpecTrf,
+  },
+  {
+    id: 20,
+    category: "Gear",
+    name: "Helical Gear Bevel TF",
+    image: Tf,
+    image2: SpecTf,
+  },
+  {
+    id: 21,
+    category: "Gear",
+    name: "Helical Gear Bevel TK",
+    image: Tk,
+    image2: SpecTk,
+  },
+  {
+    id: 22,
+    category: "Gear",
+    name: "Helical Gear Bevel TKAF",
+    image: Tkaf,
+    image2: SpecTkaf,
+  },
+  {
+    id: 23,
+    category: "Gear",
+    name: "TRX Series",
+    image: Trx,
+    image2: SpecTrx,
+  },
+  {
+    id: 24,
+    category: "Gear",
+    name: "TKB Series",
+    image: Tkb,
+    image2: SpecTkb,
+  },
+  {
+    id: 25,
+    category: "Gear",
+    name: "TKM Series",
+    image: Tkm,
+    image2: SpecTkm,
+  },
+  {
+    id: 26,
+    category: "Gear",
+    name: "MRV",
+    image: Mrv,
+    image2: SpecMrv,
+  },
+  {
+    id: 27,
+    category: "Gear",
+    name: "G3LM/G3FM Series",
+    image: Glm,
+    image2: SpecGlm,
+  },
+  {
+    id: 28,
+    category: "Gear",
+    name: "G3LS Series",
+    image: Gls,
+    image2: SpecGls,
+  },
+  {
+    id: 29,
+    category: "Gear",
+    name: "G3L Series",
+    image: Gl,
+    image2: SpecGl,
+  },
+  {
+    id: 30,
+    category: "Gear",
+    name: "CHCZ...p (IEC)",
+    image: Chcz,
+    image2: SpecChcz,
+  },
+  {
+    id: 31,
+    category: "Gear",
+    name: "CHCF...P (IEC)",
+    image: Chcf,
+    image2: SpecChcf,
+  },
+  {
+    id: 32,
+    category: "Gear",
+    name: "CHCF...HS",
+    image: Chcfhs,
+    image2: SpecChcfhs,
+  },
+  {
+    id: 33,
+    category: "Gear",
+    name: "Variator Foot Mounting With Input Shaft",
+    image: InputShaft,
+    image2: SpecInput,
+  },
+  {
+    id: 34,
+    category: "Gear",
+    name: "Variator Foor Mounting",
+    image: FootMounting,
+    image2: SpecFoot,
+  },
+  {
+    id: 35,
+    category: "Gear",
+    name: "Variator Flange Mounting",
+    image: Flange,
+    image2: SpecFlange,
   },
 ];
 
@@ -184,7 +396,7 @@ export const testimonial = [
     location: "Los Angeles, CA",
     testimonial:
       "Heavy Parts Hub has been instrumental in helping us keep our fleet of trucks on the road. Their knowledgeable staff and top-notch customer service make ordering parts a breeze.",
-    image: People1,
+    image: People4,
     name: "Emily H.",
   },
   {
@@ -193,7 +405,7 @@ export const testimonial = [
     location: "Los Angeles, CA",
     testimonial:
       "Heavy Parts Hub has been instrumental in helping us keep our fleet of trucks on the road.",
-    image: People2,
+    image: People5,
     name: "David M.",
   },
   {
@@ -202,7 +414,7 @@ export const testimonial = [
     location: "Los Angeles, CA",
     testimonial:
       "Their knowledgeable staff and top-notch customer service make ordering parts a breeze. Plus, their competitive prices help us stay within budget without sacrificing quality.",
-    image: People3,
+    image: People6,
     name: "Mike T.",
   },
   {
@@ -211,7 +423,46 @@ export const testimonial = [
     location: "Los Angeles, CA",
     testimonial:
       "Their competitive prices help us stay within budget without sacrificing quality.",
-    image: People1,
+    image: People7,
     name: "Jessica H.",
+  },
+];
+
+export const faq = [
+  {
+    id: 1,
+    eventKey: 0,
+    title: "What types of heavy vehicle spare parts do you offer?",
+    desc: "At Heavy Vehicle Parts Hub, we offer a wide range of spare parts for heavy vehicles, including engine components, transmission parts, brake systems, suspension and steering parts, electrical components, and body and cabin parts. Whether you need filters, belts, brake pads, or cabin interior components, we have everything you need to keep your heavy vehicles running smoothly.",
+  },
+  {
+    id: 2,
+    eventKey: 1,
+    title: "How do I know if a part will fit my vehicle?",
+    desc: "We understand the importance of finding the right part for your vehicle. That's why we provide detailed product descriptions and specifications for each part in our catalog. Additionally, our knowledgeable customer service team is available to assist you with any questions you may have about compatibility and fitment.",
+  },
+  {
+    id: 3,
+    eventKey: 2,
+    title: "Do you offer warranty on your parts?",
+    desc: "Yes, we stand behind the quality of our products. Many of our parts come with manufacturer warranties, and we also offer our own warranty on select products. If you encounter any issues with a part you've purchased from us, please contact our customer service team, and we'll be happy to assist you with warranty claims and replacements.",
+  },
+  {
+    id: 4,
+    eventKey: 3,
+    title: "How can I place an order?",
+    desc: "Placing an order with Heavy Vehicle Parts Hub is easy. Simply browse our online catalog, add the parts you need to your shopping cart, and proceed to checkout. You can choose from a variety of payment options, including credit card, PayPal, and more. If you need assistance with placing an order, our customer service team is available to help.",
+  },
+  {
+    id: 5,
+    eventKey: 4,
+    title: "How quickly will I receive my order?",
+    desc: "We understand the importance of timely repairs, which is why we offer fast and reliable shipping options to get your parts to you as quickly as possible. The delivery time will depend on your location and the shipping method you choose at checkout. Once your order has been processed and shipped, we'll provide you with tracking information so you can keep tabs on your delivery every step of the way.",
+  },
+  {
+    id: 6,
+    eventKey: 5,
+    title: "Can I order parts in bulk for my fleet?",
+    desc: "Yes, we welcome bulk orders for fleets of all sizes. Whether you need to stock up on maintenance essentials or replace multiple parts across your fleet, we're here to help. Contact our customer service team to discuss your specific needs, and we'll work with you to ensure that you get the parts you need in the quantities you require.",
   },
 ];

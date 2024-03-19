@@ -1,11 +1,9 @@
+import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { Container, Navbar, Nav } from "react-bootstrap";
 
-import { navLinks } from "../../assets/data/index";
-import { useState, useEffect } from "react";
-
-import "../../index.css";
-import "./navigation.css"
+import { navLinks } from "../assets/data/index";
+import "../styles/component.css"
 
 const Navigation = () => {
   const [bgColor, changeBgColor] = useState(false);
@@ -32,14 +30,15 @@ const Navigation = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav p-0">
             <Nav className="ms-auto d-flex gap-4 gap-lg-4 gap-md-5 gap-sm-4 text-center">
-              {navLinks.map((link) => { 
+              {navLinks.map((link) => {
                 return (
                   <div key={link.id}>
                     <NavLink
                       to={link.path}
                       className={({ isActive, isPending }) =>
                         isPending ? "pending" : isActive ? "active" : ""
-                      } reloadDocument
+                      }
+                      reloadDocument
                     >
                       {link.text}
                     </NavLink>
