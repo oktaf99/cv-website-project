@@ -24,7 +24,7 @@ import ChainDetail from "../img/product/gear-revco/chain-detail.jpeg";
 // Gear2
 import Tr from "../img/product/gear-yuema/gear2-tr.jpeg";
 import Trf from "../img/product/gear-yuema/gear2-trf.jpeg";
-import Tf from "../img/product/gear-yuema/gear2-Tf.jpeg";
+import Tf from "../img/product/gear-yuema/gear2-tf.jpeg";
 import Tk from "../img/product/gear-yuema/gear2-tk.jpeg";
 import Tkaf from "../img/product/gear-yuema/gear2-tkaf.jpeg";
 import Trx from "../img/product/gear-yuema/gear2-trx.jpeg";
