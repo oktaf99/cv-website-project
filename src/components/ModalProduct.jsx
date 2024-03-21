@@ -1,5 +1,7 @@
 import React from "react";
 
+import { Row, Col } from "react-bootstrap";
+
 import { spareParts } from "../assets/data/index";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
@@ -18,7 +20,7 @@ const ModalProduct = ({ activeID, setShowModal }) => {
   return (
     <div className="overlay" onClick={(e) => setShowModal(false)}>
       <div className="modal-product">
-        <div className="modal-image">
+        <div className="modal-image w-100 d-flex justify-content-center align-items-center">
           <img src={product.image} alt="" className="main-img" />
         </div>
 
@@ -39,6 +41,7 @@ const ModalProduct = ({ activeID, setShowModal }) => {
           <FontAwesomeIcon icon={faXmark} />
         </button>
       </div>
+      
     </div>
   );
 };

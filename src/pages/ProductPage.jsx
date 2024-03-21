@@ -14,7 +14,7 @@ const Product = () => {
   const [activeID, setActiveID] = useState(null);
   const [selectTab, setSelectTab] = useState("all");
   const [dataProduct, setDataProduct] = useState(spareParts);
-  const [nextItems, setNextItems] = useState(6);
+  const [nextItems, setNextItems] = useState(8);
 
   useEffect(() => {
     if (selectTab === "all") {
@@ -52,7 +52,7 @@ const Product = () => {
 
   // Load more Handler
   const loadMoreHandler = () => {
-    setNextItems((prev) => prev + 3);
+    setNextItems((prev) => prev + 4);
   };
 
   // Show Modal
@@ -79,7 +79,7 @@ const Product = () => {
         </div>
       </section>
       {/* Product Card */}
-      <section className="product px-lg-0 px-md-3 px-sm-4 px-3">
+      <section className="product">
         <Container className="d-flex flex-column justify-content-center gap-3 gap-lg-4">
           <Row>
             <div className="category-wrapper d-flex align-items-start justify-content-start px-0">
@@ -146,14 +146,15 @@ const Product = () => {
                 <div className="productImg">
                   <img src={parts.image} alt="" />
                 </div>
-                <div className="cardBody">
+                <div className="cardBody text-center">
                   <h5>{parts.name}</h5>
+                  <p>{parts.category}</p>
                 </div>
               </Col>
             ))}
           </Row>
           <div className="btn-load text-center m-auto mt-4">
-            {nextItems < dataProduct.length && spareParts.length > 6 && (
+            {nextItems < dataProduct.length && spareParts.length > 8 && (
               <button onClick={loadMoreHandler}>Load more</button>
             )}
           </div>

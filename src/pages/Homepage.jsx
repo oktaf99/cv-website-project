@@ -102,7 +102,7 @@ const Homepage = () => {
                 alt=""
               />
             </Col>
-            <Col className="about-content position-relative d-flex flex-column align-items-start justify-content-center gap-3 px-0">
+            <Col className="about-content position-relative d-flex flex-column align-items-start justify-content-center gap-2 gap-lg-3 px-0">
               <h1
                 className="m-0 display-5"
                 data-aos="fade-up"
@@ -142,7 +142,7 @@ const Homepage = () => {
       {/* Service Section */}
       <section id="service">
         <Container className="d-flex flex-column gap-4">
-          <Row className="serviceTitle d-flex justify-content-between gap-3">
+          <Row className="serviceTitle d-flex justify-content-between gap-2 gap-lg-3">
             <div className="d-flex flex-column align-items-center justify-content-center">
               {/* <p className="highlight">Our Services</p> */}
               <h1 className="display-5">Why choose Us?</h1>
@@ -238,7 +238,7 @@ const Homepage = () => {
       {/* Testimonial Section*/}
       <section id="testimonial">
         <Container className="d-flex flex-column gap-4 px-0">
-          <Row className="testiTitle d-flex flex-column text-center gap-2">
+          <Row className="testiTitle d-flex flex-column text-center gap-lg-2 gap-2">
             {/* <p className="highlight">Testimonials</p> */}
             <h1 className="display-5 p-0">What Our Client Says</h1>
             <p className="p-0">Hear What Our Client Have to Say About Us</p>

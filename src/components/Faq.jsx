@@ -2,15 +2,15 @@ import React from "react";
 import { Container, Row, Col, Accordion } from "react-bootstrap";
 
 import { faq } from "../assets/data/index";
-import "../styles/component.css"
+import "../styles/component.css";
 
 const Faq = () => {
   return (
-    <div className="faq py-5">
-      <Container className="d-flex flex-column align-items-center gap-4">
+    <div className="faq">
+      <Container className="d-flex flex-column align-items-center gap-2 gap-lg-4">
         <Row>
-          <Col>
-            <h1 className="title">FAQ</h1>
+          <Col className="text-center faq-title">
+            <h1 className="display-5">Frequently Asked Questions</h1>
           </Col>
         </Row>
         <Row className="faq-content row-cols-lg-2 row-cols-1 row-gap-3">

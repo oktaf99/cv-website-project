@@ -83,16 +83,15 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   max-width: 850px;
-  min-width: 200px;
   margin-top: 0;
   width: 100%;
-  max-height: 450px;
-  height: 100%;
+  height: 450px;
   background: #fff;
   border-radius: 20px;
   padding: 20px;
   animation-name: slideIn;
   animation-duration: 0.4s;
+  overflow: hidden;
   position: relative;
   /* position: absolute;
   top: 50%;
@@ -111,11 +110,11 @@
   }
 }
 
-.modal-product .modal-image {
+/* .modal-product .modal-image {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
 .modal-product .main-img {
   max-width: 400px;
@@ -123,7 +122,6 @@
   max-height: 300px;
   height: 100%;
   object-fit: contain;
-  overflow: hidden;
 }
 
 .modal-body {
@@ -194,11 +192,14 @@
 }
 
 /* FAQ SECTION */
-
 .faq {
   min-height: 80vh;
   width: 100%;
   padding: 50px 0;
+}
+
+.faq .faq-title h1 {
+  font-weight: 600;
 }
 
 .accordion .accordion-body {
@@ -339,7 +340,7 @@
   }
 
   .navbar.bg-active .navbar-nav {
-    box-shadow: 0;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
     border-bottom: none;
   }
 
@@ -349,15 +350,8 @@
     border-radius: 2px;
   }
 
-  .navbar.bg-active button.navbar-toggler {
-    padding: 5px 10px;
-    border: 1px solid #bebebe;
-  }
-
-  button.navbar-toggler:focus {
-    color: #fff;
-    border: none;
-    outline: none;
+  button.navbar-toggler:focus:not(:focus-visible) {
+    color: transparent !important;
   }
 
   /* button.navbar-toggler {
@@ -379,6 +373,16 @@
     height: 100%;
   }
 
+  .modal-product .img-detail {
+    max-width: 350px;
+    width: 100%;
+  }
+
+  .modal-body .btn-modal {
+    bottom: 0;
+    right: 0;
+  }
+
   #subscribe .subscribe-content h1 {
     font-size: 2.6rem;
     width: 80%;
@@ -386,46 +390,48 @@
 }
 
 @media screen and (max-width: 768px) {
-  #subscribe .subscribe-content h1 {
-    font-size: 2.4rem;
-    width: 100%;
+  .navbar-wrapper .navbar-brand {
+    font-size: 1.8rem;
   }
 
-  #subscribe .subscribe-content p {
-    width: 90%;
-  }
-
+  /* Modal */
   .modal-product {
-    gap: 0;
-    width: 70%;
-    max-height: 550px;
-    height: 100%;
+    width: 80%;
+    height: 480px;
     padding: 10px 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
   }
 
   .modal-product .main-img {
-    max-width: 280px;
     width: 100%;
-    height: 220px;
+    height: 200px;
   }
 
   .modal-product .img-detail {
-    max-width: 280px;
+    max-width: 300px;
     width: 100%;
   }
 
+  .modal-body {
+    gap: 5px;
+  }
+
   .modal-body .btn-modal {
-    bottom: 0%;
+    bottom: 1%;
+    right: 0;
   }
 
   .closeBtn {
     right: 10%;
   }
 
-  .cv-name p {
-    width: 100%;
+  /* FAQ */
+  .faq {
   }
-
   .accordion .accordion-button {
     font-size: 15px;
   }
@@ -435,25 +441,93 @@
     line-height: 25px;
     padding: 15px;
   }
+
+  /* Subscribe */
+  #subscribe .subscribe-content h1 {
+    font-size: 2.4rem;
+    width: 100%;
+  }
+
+  #subscribe .subscribe-content p {
+    width: 90%;
+  }
+
+  /* Footer */
+  .cv-name p {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 576px) {
-  .navbar-wrapper .navbar {
-    padding: 10px 20px;
+  .navbar-wrapper .navbar-brand {
+    font-size: 1.5rem;
   }
 
-  .modal-product {
-    gap: 0;
-    width: 85%;
-    max-height: 450px;
-    height: 100%;
-    padding: 10px 15px;
+  .navbar-wrapper .navbar {
+    padding: 8px 20px;
   }
+
+  button.navbar-toggler {
+    font-size: 1rem;
+  }
+
+  /* Modal */
+  .modal-product {
+    width: 90%;
+    height: 420px;
+    gap: 10px;
+  }
+
+  .modal-product .main-img {
+    max-width: 250px;
+    width: 100%;
+    height: 150px;
+  }
+
+  .modal-product .img-detail {
+    max-width: 280px;
+    width: 100%;
+  }
+
+  .modal-body {
+    gap: 0;
+  }
+
+  .modal-body h3 {
+    font-size: 1.4rem;
+  }
+
+  .modal-body p {
+    font-size: 13px;
+  }
+
+  .modal-body .btn-modal {
+    bottom: 0%;
+  }
+
+  .modal-body button {
+    padding: 8px 10px;
+    font-size: 13px;
+  }
+
+  .closeBtn {
+    top: 2%;
+    right: 11%;
+  }
+  .closeBtn svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  /* FAQ */
+  .faq {
+    padding: 25px 10px;
+  }s
 
   .accordion .accordion-button {
     font-size: 14px;
   }
-
+  /* Footer */
   #footer {
     padding: 30px 10px;
   }
@@ -474,6 +548,65 @@
     padding: 8px 10px;
   }
 
+  .navbar-wrapper .navbar {
+    padding: 5px 15px;
+  }
+
+  .navbar-nav {
+    padding: 20px 0;
+  }
+
+  .navbar-nav a {
+    font-size: 1.3rem;
+  }
+
+  button.navbar-toggler {
+    font-size: 1rem;
+  }
+
+  /* Modal */
+  .modal-product {
+    width: 90%;
+    height: 360px;
+    padding: 10px;
+  }
+
+  .modal-product .main-img {
+    max-width: 180px;
+    width: 100%;
+  }
+  .modal-product .img-detail {
+    max-width: 250px;
+    width: 100%;
+  }
+
+  .modal-body h3 {
+    font-size: 1.2rem;
+  }
+
+  .modal-body p {
+    font-size: 12px;
+  }
+
+  .modal-body button {
+    font-size: 12px;
+  }
+
+  .closeBtn {
+    top: 2%;
+    right: 11%;
+  }
+  .closeBtn svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  /* FAQ */
+
+  .faq .faq-title h1 {
+    font-size: 1.5rem;
+  }
+
   .accordion .accordion-button {
     font-size: 12px;
     padding: 12px 15px;
@@ -484,6 +617,8 @@
     line-height: 20px;
     padding: 12px 15px;
   }
+
+  /* Subscribe */
 
   #subscribe .container {
     padding: 0;
@@ -505,6 +640,7 @@
     padding: 10px 20px;
   }
 
+  /* Footer */
   #footer,
   .wrapper #subscribe {
     padding: 30px 10px;
@@ -514,6 +650,10 @@
     font-size: 12px;
     line-height: 25px;
     width: 100%;
+  }
+
+  .address p {
+    font-size: 12px;
   }
 
   .links a {

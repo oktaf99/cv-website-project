@@ -72,7 +72,7 @@ const Footer = () => {
                 performing at their best.
               </p>
             </Col>
-            <Col className="col-lg-2 col-md-1 links d-flex flex-column gap-lg-3 gap-2 px-0">
+            <Col className="col-lg-2 col-md-1 links d-flex flex-column gap-3 px-0">
               <h4>Navigation</h4>
               <Link to="/" reloadDocument>
                 Home
