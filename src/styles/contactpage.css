@@ -1,4 +1,3 @@
-
 .commonSection {
   min-height: 55vh;
   position: relative;
@@ -20,4 +19,108 @@
   align-items: center;
   min-height: 80vh;
   padding: 50px 0;
+}
+
+.contact-title h1 {
+  font-weight: 400;
+}
+
+.app-wrapper {
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  place-items: center;
+  gap: 20px; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.contact-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  width: 200px;
+}
+
+.contact-icon svg {
+  font-size: 40px;
+  padding: 40px;
+  border-radius: 50%;
+  background: #bebebe;
+  color: #fff;
+}
+
+.contact-icon h5 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+.contact-icon p {
+  margin: 0;
+  border-bottom: 1px solid #000;
+}
+
+.contact-icon a {
+  margin: 0;
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+  border-bottom: 1px solid #000;
+}
+
+.contact-icon:last-child svg {
+  height: 40px;
+  padding: 40px 45px;
+}
+
+@media screen and (max-width: 992px) {
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 576px) {
+  .app-wrapper {
+    gap: 15px;
+  }
+
+  .contact-icon svg {
+    font-size: 30px;
+    padding: 30px;
+  }
+
+  .contact-icon:last-child svg {
+    height: 40px;
+    padding: 30px 35px;
+    object-fit: cover;
+  }
+
+  .contact-icon h5 {
+    font-size: 1rem;
+  }
+
+  .contact-icon a {
+    font-size: 13px;
+  }
+
+  .contact-icon p {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  #contactPage {
+    padding: 30px 10px;
+  }
+
+  .contact-title h1 {
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
 }

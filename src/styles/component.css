@@ -80,23 +80,27 @@
 }
 
 .modal-product {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  max-width: 850px;
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin-top: 0;
+  max-width: 600px;
   width: 100%;
-  height: 450px;
+  height: 550px;
   background: #fff;
   border-radius: 20px;
-  padding: 20px;
+  padding: 10px;
   animation-name: slideIn;
   animation-duration: 0.4s;
   overflow: hidden;
-  position: relative;
-  /* position: absolute;
+  /* position: relative; */
+  position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); */
+  transform: translate(-50%, -50%);
 }
 
 @keyframes slideIn {
@@ -110,11 +114,16 @@
   }
 }
 
-/* .modal-product .modal-image {
+.carousel .carousel-control-next span {
+  color: #000;
+}
+
+.modal-image {
   display: flex;
   justify-content: center;
   align-items: center;
-} */
+  height: 70%;
+}
 
 .modal-product .main-img {
   max-width: 400px;
@@ -124,17 +133,23 @@
   object-fit: contain;
 }
 
+
+
 .modal-body {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  align-items: center;
+  gap: 5px;
+  height: 20%;
   position: relative;
+  background: bisque;
 }
 
 .modal-body .img-detail {
   max-width: 380px;
   width: 100%;
-  object-fit: contain;
+  height: 100%;
+  object-fit: cover;
 }
 
 .modal-body h3 {
@@ -145,11 +160,9 @@
 }
 
 .modal-body p {
-  text-align: start;
   font-size: 1rem;
-  line-height: 30px;
   font-weight: 500;
-  color: #000;
+  color: gray;
   margin: 0;
 }
 
@@ -159,9 +172,7 @@
 }
 
 .modal-body .btn-modal {
-  position: absolute;
-  bottom: 5%;
-  right: 5%;
+  margin-top: 20px;
 }
 
 .modal-body button {
@@ -178,8 +189,9 @@
 
 .closeBtn {
   position: absolute;
-  top: 3%;
-  right: 6%;
+  top: 2%;
+  right: 8%;
+  z-index: 5;
 }
 .closeBtn svg {
   display: flex;
@@ -430,8 +442,7 @@
   }
 
   /* FAQ */
-  .faq {
-  }
+  
   .accordion .accordion-button {
     font-size: 15px;
   }
@@ -522,11 +533,17 @@
   /* FAQ */
   .faq {
     padding: 25px 10px;
-  }s
+  }
 
   .accordion .accordion-button {
     font-size: 14px;
+    padding: 15px;
   }
+
+  .accordion .accordion-body {
+    padding: 12px;
+  }
+  
   /* Footer */
   #footer {
     padding: 30px 10px;
@@ -615,7 +632,7 @@
   .accordion .accordion-body {
     font-size: 12px;
     line-height: 20px;
-    padding: 12px 15px;
+    padding: 12px 10px;
   }
 
   /* Subscribe */

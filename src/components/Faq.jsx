@@ -7,23 +7,21 @@ import "../styles/component.css";
 const Faq = () => {
   return (
     <div className="faq">
-      <Container className="d-flex flex-column align-items-center gap-2 gap-lg-4">
+      <Container className="d-flex flex-column align-items-center gap-3 gap-lg-4">
         <Row>
-          <Col className="text-center faq-title">
-            <h1 className="display-5">Frequently Asked Questions</h1>
+          <Col className="text-center faq-title position-relative">
+            <h1 className="display-5 m-0">Frequently Asked Questions</h1>
           </Col>
         </Row>
         <Row className="faq-content row-cols-lg-2 row-cols-1 row-gap-3">
           {faq.map((data) => {
             return (
-              <Col key={data.id}>
-                <Accordion className="shadow-sm">
-                  <Accordion.Item eventKey={data.eventKey}>
-                    <Accordion.Header>{data.title}</Accordion.Header>
-                    <Accordion.Body>{data.desc}</Accordion.Body>
-                  </Accordion.Item>
-                </Accordion>
-              </Col>
+              <Accordion key={data.id} className="shadow-sm p-0">
+                <Accordion.Item eventKey={data.eventKey}>
+                  <Accordion.Header>{data.title}</Accordion.Header>
+                  <Accordion.Body>{data.desc}</Accordion.Body>
+                </Accordion.Item>
+              </Accordion>
             );
           })}
         </Row>

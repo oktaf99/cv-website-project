@@ -1,6 +1,5 @@
 import React from "react";
-
-import { Row, Col } from "react-bootstrap";
+import Carousel from "react-bootstrap/Carousel";
 
 import { spareParts } from "../assets/data/index";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -16,10 +15,10 @@ const ModalProduct = ({ activeID, setShowModal }) => {
   const buttonHandler = (url) => {
     window.open(url, "_blank");
   };
-  //
+  //onClick={(e) => setShowModal(false)}
   return (
-    <div className="overlay" onClick={(e) => setShowModal(false)}>
-      <div className="modal-product">
+    <div className="overlay">
+      {/* <div className="modal-product">
         <div className="modal-image w-100 d-flex justify-content-center align-items-center">
           <img src={product.image} alt="" className="main-img" />
         </div>
@@ -40,8 +39,34 @@ const ModalProduct = ({ activeID, setShowModal }) => {
         <button className="closeBtn" onClick={() => setShowModal(false)}>
           <FontAwesomeIcon icon={faXmark} />
         </button>
+      </div> */}
+
+      <div className="modal-product">
+        <Carousel className="modal-image w-100 text-center">
+          <Carousel.Item>
+            <img src={product.image} alt="" className="main-img" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img src={product.image2} alt="" className="main-img" />
+          </Carousel.Item>
+        </Carousel>
+
+        <div className="modal-body w-100 py-2 py-lg-4 py-md-4 py-sm-0">
+          <h3>{product.name}</h3>
+          <p>{product.category}</p>
+          <div className="btn-modal">
+            <button
+              onClick={() => buttonHandler("https://wa.me/+6285811482792/")}
+            >
+              Interesting ? <FontAwesomeIcon icon={faPhone} />
+            </button>
+          </div>
+        </div>
+
+        <button className="closeBtn" onClick={() => setShowModal(false)}>
+          <FontAwesomeIcon icon={faXmark} />
+        </button>
       </div>
-      
     </div>
   );
 };

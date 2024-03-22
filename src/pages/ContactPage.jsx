@@ -1,22 +1,22 @@
 import React from "react";
-import { Container } from "react-bootstrap";
+import { Col, Container } from "react-bootstrap";
 
 import Helmet from "../components/Helmet";
-import Faq from "../components/Faq"
+import Faq from "../components/Faq";
 import BgCommonSection from "../assets/img/1.jpg";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { faMapPin } from "@fortawesome/free-solid-svg-icons";
+import { faBuilding } from "@fortawesome/free-solid-svg-icons";
 
 import "../styles/contactpage.css";
 
 const ContactPage = () => {
   return (
     <Helmet title="Contact">
-       {/* Common Section */}
-       <section
+      {/* Common Section */}
+      <section
         className="commonSection text-center"
         style={{
           backgroundImage: `url(${BgCommonSection})`,
@@ -31,10 +31,34 @@ const ContactPage = () => {
         </div>
       </section>
 
-       {/* Contact Section */}
+      {/* Contact Section */}
       <section id="contactPage">
-        <Container>
-          
+        <Container className="d-flex flex-column justify-content-center align-item-center gap-3 gap-lg-5 p-0">
+          <div className="contact-title text-center">
+            <h1 className="display-6 m-0">Get in Touch With Us</h1>
+          </div>
+          <div className="app-wrapper">
+            <div className="contact-icon">
+              <FontAwesomeIcon icon={faPhone} />
+              <h5>Call</h5>
+              <a href="">+62 8457348 23</a>
+            </div>
+            <div className="contact-icon">
+              <FontAwesomeIcon icon={faEnvelope} />
+              <h5>Email</h5>
+              <a href="">cvproject@gmail.com</a>
+            </div>
+            <div className="contact-icon">
+              <FontAwesomeIcon icon={faPhone} />
+              <h5>Call</h5>
+              <a href="">+62 8457348 23</a>
+            </div>
+            <div className="contact-icon">
+              <FontAwesomeIcon icon={faBuilding} />
+              <h5>Office</h5>
+              <p>North Jakarta, Jakarta</p>
+            </div>
+          </div>
         </Container>
       </section>
 
