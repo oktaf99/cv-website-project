@@ -133,8 +133,6 @@
   object-fit: contain;
 }
 
-
-
 .modal-body {
   display: flex;
   flex-direction: column;
@@ -210,7 +208,7 @@
   padding: 50px 0;
 }
 
-.faq .faq-title h1 {
+.faq-title h1 {
   font-weight: 600;
 }
 
@@ -442,7 +440,12 @@
   }
 
   /* FAQ */
-  
+
+  .faq {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
   .accordion .accordion-button {
     font-size: 15px;
   }
@@ -543,7 +546,7 @@
   .accordion .accordion-body {
     padding: 12px;
   }
-  
+
   /* Footer */
   #footer {
     padding: 30px 10px;
@@ -620,7 +623,7 @@
 
   /* FAQ */
 
-  .faq .faq-title h1 {
+  .faq-title h1 {
     font-size: 1.5rem;
   }
 

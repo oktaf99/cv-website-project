@@ -65,7 +65,7 @@ const Product = () => {
     <Helmet title="Product">
       {/* Common Section */}
       <section
-        className="product-title text-center"
+        className="commonSection-product text-center"
         style={{
           backgroundImage: `url(${BgCommonProduct})`,
           backgroundSize: "cover",
@@ -140,15 +140,21 @@ const Product = () => {
                 data-aos="fade-zoom-in"
                 data-aos-delay="50"
                 data-aos-duration="1000"
-                className="card shadow-sm"
-                onClick={() => showModalHandler(parts.id)}
+                className="card-product shadow-md"
               >
-                <div className="productImg">
+                <div className="productImg overflow-hidden">
                   <img src={parts.image} alt="" />
                 </div>
-                <div className="cardBody text-center">
+                <div className="cardBody">
                   <h5>{parts.name}</h5>
-                  <p>{parts.category}</p>
+                  <p>
+                    Category : <span>{parts.category}</span>
+                  </p>
+                  <div className="btn-product">
+                    <button onClick={() => showModalHandler(parts.id)}>
+                      See more
+                    </button>
+                  </div>
                 </div>
               </Col>
             ))}

@@ -16,12 +16,14 @@ const Faq = () => {
         <Row className="faq-content row-cols-lg-2 row-cols-1 row-gap-3">
           {faq.map((data) => {
             return (
-              <Accordion key={data.id} className="shadow-sm p-0">
-                <Accordion.Item eventKey={data.eventKey}>
-                  <Accordion.Header>{data.title}</Accordion.Header>
-                  <Accordion.Body>{data.desc}</Accordion.Body>
-                </Accordion.Item>
-              </Accordion>
+              <Col key={data.id}>
+                <Accordion className="shadow-sm p-0">
+                  <Accordion.Item eventKey={data.eventKey}>
+                    <Accordion.Header>{data.title}</Accordion.Header>
+                    <Accordion.Body>{data.desc}</Accordion.Body>
+                  </Accordion.Item>
+                </Accordion>
+              </Col>
             );
           })}
         </Row>

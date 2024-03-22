@@ -17,7 +17,7 @@ const ContactPage = () => {
     <Helmet title="Contact">
       {/* Common Section */}
       <section
-        className="commonSection text-center"
+        className="commonSectin-contact text-center"
         style={{
           backgroundImage: `url(${BgCommonSection})`,
           backgroundSize: "cover",

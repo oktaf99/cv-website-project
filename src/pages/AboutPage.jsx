@@ -12,7 +12,7 @@ const About = () => {
     <Helmet title="about">
       {/* Common Section */}
       <section
-        className="commonSection text-center"
+        className="commonSection-about text-center"
         style={{
           backgroundImage: `url(${BgCommonSection})`,
           backgroundSize: "cover",
