@@ -42,16 +42,16 @@ const ModalProduct = ({ activeID, setShowModal }) => {
       </div> */}
 
       <div className="modal-product">
-        <Carousel className="modal-image w-100 text-center">
-          <Carousel.Item>
+        <Carousel data-bs-theme="dark" className="modal-image w-100 h-100">
+          <Carousel.Item className="text-center">
             <img src={product.image} alt="" className="main-img" />
           </Carousel.Item>
-          <Carousel.Item>
-            <img src={product.image2} alt="" className="main-img" />
+          <Carousel.Item className="text-center">
+            <img src={product.image2} alt="" className="img-detail" />
           </Carousel.Item>
         </Carousel>
 
-        <div className="modal-body w-100 py-2 py-lg-4 py-md-4 py-sm-0">
+        <div className="modal-body">
           <h3>{product.name}</h3>
           <p>{product.category}</p>
           <div className="btn-modal">

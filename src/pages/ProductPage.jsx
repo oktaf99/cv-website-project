@@ -42,9 +42,9 @@ const Product = () => {
       setDataProduct(filteredData);
     }
 
-    if (selectTab === "suspension") {
+    if (selectTab === "motor") {
       const filteredData = spareParts.filter(
-        (item) => item.category === "Suspension"
+        (item) => item.category === "Motor"
       );
       setDataProduct(filteredData);
     }
@@ -122,12 +122,12 @@ const Product = () => {
                     Automation
                   </button>
                   <button
-                    onClick={() => setSelectTab("suspension")}
+                    onClick={() => setSelectTab("motor")}
                     className={`btn-category ${
-                      selectTab === "suspension" ? "btn-active" : ""
+                      selectTab === "motor" ? "btn-active" : ""
                     }`}
                   >
-                    Suspension
+                    Motor
                   </button>
                 </Dropdown.Menu>
               </Dropdown>

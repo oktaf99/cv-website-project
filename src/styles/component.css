@@ -66,6 +66,8 @@
   align-items: center;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
   animation-name: fadeIn;
   animation-duration: 0.4s;
 }
@@ -114,8 +116,15 @@
   }
 }
 
-.carousel .carousel-control-next span {
-  color: #000;
+a.carousel-control-next,
+a.carousel-control-prev {
+  height: fit-content;
+  width: fit-content;
+  margin: auto;
+}
+
+.modal-image .carousel-indicators {
+  margin: 0;
 }
 
 .modal-image {
@@ -125,7 +134,7 @@
   height: 70%;
 }
 
-.modal-product .main-img {
+.modal-image .main-img {
   max-width: 400px;
   width: 100%;
   max-height: 300px;
@@ -133,21 +142,23 @@
   object-fit: contain;
 }
 
-.modal-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 5px;
-  height: 20%;
-  position: relative;
-  background: bisque;
-}
-
-.modal-body .img-detail {
-  max-width: 380px;
+.modal-image .img-detail {
+  max-width: 450px;
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.modal-product .modal-body {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 5px;
+  width: 100%;
+  padding: 12px 10px;
+  position: relative;
+  background: bisque;
+  border-radius: 15px;
 }
 
 .modal-body h3 {
@@ -159,8 +170,11 @@
 
 .modal-body p {
   font-size: 1rem;
-  font-weight: 500;
-  color: gray;
+  font-weight: 300;
+  color: #fff;
+  background: #ec6e31;
+  padding: 3px 5px;
+  border-radius: 5px;
   margin: 0;
 }
 
@@ -170,14 +184,18 @@
 }
 
 .modal-body .btn-modal {
-  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
 }
 
-.modal-body button {
+.btn-modal button {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
+  width: 100%;
   font-size: 1rem;
   padding: 8px 15px;
   border-radius: 5px;
@@ -188,9 +206,10 @@
 .closeBtn {
   position: absolute;
   top: 2%;
-  right: 8%;
+  right: 7%;
   z-index: 5;
 }
+
 .closeBtn svg {
   display: flex;
   justify-content: end;
@@ -378,12 +397,12 @@
     height: 400px;
   }
 
-  .modal-product .main-img {
+  .modal-image .main-img {
     width: 100%;
     height: 100%;
   }
 
-  .modal-product .img-detail {
+  .modal-image .img-detail {
     max-width: 350px;
     width: 100%;
   }
@@ -416,17 +435,17 @@
     gap: 15px;
   }
 
-  .modal-product .main-img {
+  .modal-image .main-img {
     width: 100%;
     height: 200px;
   }
 
-  .modal-product .img-detail {
+  .modal-image .img-detail {
     max-width: 300px;
     width: 100%;
   }
 
-  .modal-body {
+  .modal-product .modal-body {
     gap: 5px;
   }
 
@@ -492,18 +511,18 @@
     gap: 10px;
   }
 
-  .modal-product .main-img {
+  .modal-image .main-img {
     max-width: 250px;
     width: 100%;
     height: 150px;
   }
 
-  .modal-product .img-detail {
+  .modal-image .img-detail {
     max-width: 280px;
     width: 100%;
   }
 
-  .modal-body {
+  .modal-product .modal-body {
     gap: 0;
   }
 
@@ -519,7 +538,7 @@
     bottom: 0%;
   }
 
-  .modal-body button {
+  .btn-modal button {
     padding: 8px 10px;
     font-size: 13px;
   }
@@ -591,11 +610,11 @@
     padding: 10px;
   }
 
-  .modal-product .main-img {
+  .modal-image .main-img {
     max-width: 180px;
     width: 100%;
   }
-  .modal-product .img-detail {
+  .modal-image .img-detail {
     max-width: 250px;
     width: 100%;
   }
@@ -608,7 +627,7 @@
     font-size: 12px;
   }
 
-  .modal-body button {
+  .btn-modal button {
     font-size: 12px;
   }
 

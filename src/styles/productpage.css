@@ -101,6 +101,7 @@
   height: 230px;
   object-fit: contain;
   transition: 0.3s ease-in-out;
+  margin-bottom: 60px;
 }
 
 .card-product:hover .productImg img {
@@ -119,7 +120,7 @@
   width: 101%;
   min-height: 80px;
   z-index: 1;
-  border-radius: 20px 20px 15px 15px;
+  border-radius: 15px;
   background: #fff;
   box-shadow: inset 5px -5px 14px #dedede, inset -5px 5px 14px #ffffff;
   border: 1px solid #bebebe;
@@ -154,8 +155,9 @@
   float: right;
   background: transparent;
   color: salmon;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 400;
+  padding: 0 5px;
 }
 
 .btn-load button {
