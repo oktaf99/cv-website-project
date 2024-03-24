@@ -369,7 +369,8 @@
   }
 
   .cardBody {
-    min-height: 40px;
+    min-height: 60px;
+    gap: 5px;
     padding: 5px;
     border-radius: 10px;
   }
@@ -380,13 +381,21 @@
   }
 
   .cardBody p span {
-    font-size: 8px;
+    font-size: 6px;
     padding: 1px 4px;
   }
 
-  .cardBody p,
-  .cardBody button {
+  .cardBody p {
     font-size: 6px;
+  }
+
+  .btn-product {
+    bottom: 0;
+    right: 2%;
+  }
+
+  .cardBody button {
+    font-size: 7px;
   }
 
   .btn-load button {
