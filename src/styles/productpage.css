@@ -21,6 +21,11 @@
   padding-bottom: 50px;
 }
 
+.dropdown h5 {
+  font-size: 1.4rem;
+  margin: 0;
+}
+
 .dropdown .dropdown-toggle {
   background: #ec6e31;
   padding: 10px;
@@ -29,10 +34,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.dropdown button {
-  font-size: 1rem;
 }
 
 .dropdown-toggle button {
@@ -54,7 +55,7 @@
 .dropdown .dropdown-menu.show {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  row-gap: 5px;
+  row-gap: 8px;
   place-items: center;
   width: 340px;
   padding: 10px;
@@ -145,14 +146,14 @@
   align-items: center;
   margin: 0;
   color: gray;
-  font-size: 10px;
+  font-size: 11px;
 }
 
 .cardBody p span {
   background: #ec6e31;
   color: #fff;
   font-size: 12px;
-  padding: 2px 5px;
+  padding: 1px 5px;
   border-radius: 4px;
   margin-left: 5px;
 }
@@ -232,6 +233,16 @@
     width: 100%;
   }
 
+  .dropdown h5 {
+    font-size: 1.2rem;
+  }
+
+  .dropdown .dropdown-toggle {
+    padding: 8px 10px;
+    width: 140px;
+    font-size: 15px;
+  }
+
   .category-wrapper {
     display: flex;
     flex-direction: column;
@@ -281,6 +292,26 @@
     min-height: 40vh;
   }
 
+  .dropdown h5 {
+    font-size: 15px;
+  }
+
+  .dropdown .dropdown-toggle {
+    font-size: 14px;
+    width: 130px;
+    padding: 8px 10px;
+  }
+
+  .btn-category {
+    width: 130px;
+    font-size: 14px;
+  }
+
+  .dropdown .dropdown-menu.show {
+    row-gap: 8px;
+    width: 300px;
+  }
+
   .product {
     padding: 30px 10px;
   }
@@ -313,6 +344,11 @@
     font-size: 8px;
   }
 
+  .cardBody p span {
+    font-size: 9px;
+    padding: 1px 5px;
+  }
+
   .cardBody button {
     font-size: 8px;
   }
@@ -325,7 +361,6 @@
   }
 
   .dropdown h5 {
-    margin: 0;
     font-size: 14px;
   }
 
@@ -376,17 +411,17 @@
   }
 
   .cardBody h5 {
-    font-size: 9px;
+    font-size: 10px;
     line-height: 10px;
   }
 
   .cardBody p span {
-    font-size: 6px;
+    font-size: 8px;
     padding: 1px 4px;
   }
 
   .cardBody p {
-    font-size: 6px;
+    font-size: 8px;
   }
 
   .btn-product {
@@ -395,7 +430,7 @@
   }
 
   .cardBody button {
-    font-size: 7px;
+    font-size: 9px;
   }
 
   .btn-load button {

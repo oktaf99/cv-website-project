@@ -142,6 +142,7 @@ const Product = () => {
                 data-aos-delay="50"
                 data-aos-duration="1000"
                 className="card-product shadow-md"
+                onClick={() => showModalHandler(parts.id)}
               >
                 <div className="productImg overflow-hidden">
                   <img src={parts.image} alt="" />
