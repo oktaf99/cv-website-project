@@ -33,7 +33,7 @@ const ContactPage = () => {
 
       {/* Contact Section */}
       <section id="contactPage">
-        <Container className="d-flex flex-column justify-content-center align-item-center gap-3 gap-lg-5 p-0">
+        <Container className="d-flex flex-column justify-content-center align-item-center gap-4 gap-lg-5 p-0">
           <div className="contact-title text-center">
             <h1 className="display-6 m-0">Get in Touch With Us</h1>
           </div>

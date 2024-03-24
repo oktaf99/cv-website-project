@@ -85,7 +85,7 @@ export const navLinks = [
   {
     id: 2,
     path: "product",
-    text: "Product",
+    text: "Our Products",
   },
   {
     id: 3,

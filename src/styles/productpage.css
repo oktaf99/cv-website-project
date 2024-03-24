@@ -24,6 +24,10 @@
 .dropdown .dropdown-toggle {
   background: #ec6e31;
   padding: 10px 15px;
+  width: 130px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .dropdown button {
@@ -209,7 +213,7 @@
   .productImg img {
     margin-bottom: 60px;
   }
-  
+
   .cardBody button {
     font-size: 14px;
   }
@@ -250,7 +254,8 @@
     border-radius: 10px 10px;
   }
 
-  .cardBody p, .cardBody button {
+  .cardBody p,
+  .cardBody button {
     font-size: 12px;
   }
 
@@ -309,6 +314,17 @@
   .product {
     padding-top: 25px;
     padding-bottom: 25px;
+  }
+
+  .dropdown h5 {
+    margin: 0;
+    font-size: 14px;
+  }
+
+  .dropdown .dropdown-toggle {
+    width: 115px;
+    font-size: 12px;
+    padding: 8px;
   }
 
   .dropdown button {

@@ -71,14 +71,14 @@ const Homepage = () => {
           <div className="contactWrapper">
             <FontAwesomeIcon icon={faPhone} />
             <div className="desc d-flex flex-column gap-1">
-              <h6>Call</h6>
+              <h6>Phone Number</h6>
               <p>+6285823123</p>
             </div>
           </div>
           <div className="contactWrapper">
             <FontAwesomeIcon icon={faEnvelope} />
             <div className="desc d-flex flex-column gap-1">
-              <h6>Mail</h6>
+              <h6>Email</h6>
               <p>newcv@gmail.com</p>
             </div>
           </div>

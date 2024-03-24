@@ -12,37 +12,37 @@ import "../styles/productpage.css";
 const Product = () => {
   const [showModal, setShowModal] = useState(false);
   const [activeID, setActiveID] = useState(null);
-  const [selectTab, setSelectTab] = useState("all");
+  const [selectTab, setSelectTab] = useState("All");
   const [dataProduct, setDataProduct] = useState(spareParts);
   const [nextItems, setNextItems] = useState(8);
 
   useEffect(() => {
-    if (selectTab === "all") {
+    if (selectTab === "All") {
       setDataProduct(spareParts);
     }
 
-    if (selectTab === "gear") {
+    if (selectTab === "Gear") {
       const filteredData = spareParts.filter(
         (item) => item.category === "Gear"
       );
       setDataProduct(filteredData);
     }
 
-    if (selectTab === "coupling") {
+    if (selectTab === "Coupling") {
       const filteredData = spareParts.filter(
         (item) => item.category === "Coupling"
       );
       setDataProduct(filteredData);
     }
 
-    if (selectTab === "automation") {
+    if (selectTab === "Automation") {
       const filteredData = spareParts.filter(
         (item) => item.category === "Automation"
       );
       setDataProduct(filteredData);
     }
 
-    if (selectTab === "motor") {
+    if (selectTab === "Motor") {
       const filteredData = spareParts.filter(
         (item) => item.category === "Motor"
       );
@@ -75,7 +75,7 @@ const Product = () => {
         }}
       >
         <div className="commonTitle text-center">
-          <h1 className="display-3 text-white">Product</h1>
+          <h1 className="display-3 text-white">Our Products</h1>
         </div>
       </section>
       {/* Product Card */}
@@ -83,48 +83,49 @@ const Product = () => {
         <Container className="d-flex flex-column justify-content-center gap-3 gap-lg-4">
           <Row>
             <div className="category-wrapper d-flex align-items-start justify-content-start px-0">
-              <Dropdown>
+              <Dropdown className="d-flex justify-content-between align-items-center w-100">
+                <h5>Sort by Category</h5>
                 <Dropdown.Toggle id="dropdown-basic" className="btn-danger">
-                  Sort by Category
+                  {selectTab}
                 </Dropdown.Toggle>
 
                 <Dropdown.Menu>
                   <button
-                    onClick={() => setSelectTab("all")}
+                    onClick={() => setSelectTab("All")}
                     className={`btn-category ${
-                      selectTab === "all" ? "btn-active" : ""
+                      selectTab === "All" ? "btn-active" : ""
                     }`}
                   >
                     All
                   </button>
                   <button
-                    onClick={() => setSelectTab("gear")}
+                    onClick={() => setSelectTab("Gear")}
                     className={`btn-category ${
-                      selectTab === "gear" ? "btn-active" : ""
+                      selectTab === "Gear" ? "btn-active" : ""
                     }`}
                   >
                     Gear
                   </button>
                   <button
-                    onClick={() => setSelectTab("coupling")}
+                    onClick={() => setSelectTab("Coupling")}
                     className={`btn-category ${
-                      selectTab === "coupling" ? "btn-active" : ""
+                      selectTab === "Coupling" ? "btn-active" : ""
                     }`}
                   >
                     Coupling
                   </button>
                   <button
-                    onClick={() => setSelectTab("automation")}
+                    onClick={() => setSelectTab("Automation")}
                     className={`btn-category ${
-                      selectTab === "automation" ? "btn-active" : ""
+                      selectTab === "Automation" ? "btn-active" : ""
                     }`}
                   >
                     Automation
                   </button>
                   <button
-                    onClick={() => setSelectTab("motor")}
+                    onClick={() => setSelectTab("Motor")}
                     className={`btn-category ${
-                      selectTab === "motor" ? "btn-active" : ""
+                      selectTab === "Motor" ? "btn-active" : ""
                     }`}
                   >
                     Motor

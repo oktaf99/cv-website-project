@@ -127,6 +127,14 @@
     padding: 30px 10px;
   }
 
+  .app-wrapper {
+    row-gap: 30px;
+  }
+
+  .contact-icon {
+    gap: 8px;
+  }
+
   .contact-title h1 {
     font-size: 1.6rem;
     font-weight: 400;
