@@ -625,11 +625,7 @@ a.carousel-control-prev {
 
 @media screen and (max-width: 375px) {
   .navbar-wrapper .navbar {
-    padding: 8px 10px;
-  }
-
-  .navbar-wrapper .navbar {
-    padding: 5px 15px;
+    padding: 10px;
   }
 
   .navbar-nav {

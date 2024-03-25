@@ -101,7 +101,11 @@
   }
 
   .app-wrapper {
-    gap: 15px;
+    gap: 30px;
+  }
+
+  .contact-icon {
+    height: 240px;
   }
 
   .contact-icon svg {
@@ -134,11 +138,12 @@
   }
 
   .app-wrapper {
-    row-gap: 30px;
+    gap: 20px;
   }
 
   .contact-icon {
     gap: 8px;
+    height: 230px;
   }
 
   .contact-title h1 {

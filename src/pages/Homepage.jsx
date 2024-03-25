@@ -36,7 +36,7 @@ const Homepage = () => {
         }}
       >
         <Container className="p-0">
-          <div className="hero-content d-flex flex-column justify-content-start align-items-start gap-2 gap-lg-3 gap-md-3">
+          <div className="hero-content d-flex flex-column justify-content-start align-items-start gap-3 gap-md-3">
             <h1
               data-aos="fade-right"
               data-aos-duration="900"
@@ -53,7 +53,7 @@ const Homepage = () => {
               we understand the importance of keeping your heavy vehicles
               running smoothly and efficiently
             </p>
-            <div className="btn-hero d-flex justice-content-center align-items-center gap-4">
+            <div className="btn-hero d-flex justice-content-center align-items-center gap-lg-4 gap-3">
               <a
                 href="#service"
                 className="m-0"
@@ -80,7 +80,7 @@ const Homepage = () => {
 
       {/* Contact Box */}
       <section id="contact">
-        <div className="container">
+        <div className="container mx-0">
           <div className="contactWrapper">
             <FontAwesomeIcon icon={faPhone} />
             <div className="desc d-flex flex-column gap-1">
@@ -135,8 +135,7 @@ const Homepage = () => {
                 years of experience in the industry, we've built a reputation
                 for excellence, reliability, and customer satisfaction. We pride
                 ourselves on our extensive selection of high-quality parts,
-                competitive prices, and fast and reliable shipping. But what
-                truly sets us apart is our commitment to customer service.
+                competitive prices, and fast and reliable shipping.
               </p>
               <Link
                 to="/about"

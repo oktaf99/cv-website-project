@@ -540,6 +540,7 @@
   }
 
   #contact .container {
+    width: 90%;
     row-gap: 30px;
     padding: 20px;
   }
@@ -591,9 +592,14 @@
     line-height: 20px;
   }
 
-  .hero-content a {
+  .hero-content a:nth-child(1) {
     font-size: 12px;
-    padding: 10px 15px;
+    padding: 10px 20px;
+  }
+  
+  .hero-content a:nth-child(2) {
+    font-size: 12px;
+    gap: 5px;
   }
 
   /* Contact */
@@ -622,12 +628,12 @@
   }
 
   .about-content .desc {
-    font-size: 13px;
+    font-size: 12px;
     line-height: 25px;
   }
 
   .about-content a {
-    padding: 10px 15px;
+    padding: 10px 20px;
     font-size: 12px;
   }
 
@@ -640,8 +646,8 @@
   }
 
   .serviceCard svg {
-    width: 50px;
-    height: 50px;
+    width: 65px;
+    height: 65px;
   }
 
   .serviceCard p {
