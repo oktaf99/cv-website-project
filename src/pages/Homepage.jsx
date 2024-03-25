@@ -10,6 +10,7 @@ import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 
 import Faq from "../components/Faq";
 import HeroImg3 from "../assets/img/hero3.jpg";
+import Pattern1 from "../assets/img/pattern1.png";
 
 // import required modules
 import { Pagination } from "swiper/modules";
@@ -152,7 +153,16 @@ const Homepage = () => {
       </section>
 
       {/* Service Section */}
-      <section id="service">
+      <section
+        id="service"
+        style={{
+          backgroundImage: `url(${Pattern1})`,
+          backgroundSize: "cover",
+          width: "100%",
+          height: "100%",
+          zIndex: "0",
+        }}
+      >
         <Container className="d-flex flex-column gap-4">
           <Row className="serviceTitle d-flex justify-content-between gap-2 gap-lg-3">
             <div className="d-flex flex-column align-items-center justify-content-center">
@@ -253,7 +263,16 @@ const Homepage = () => {
       </section> */}
 
       {/* Testimonial Section*/}
-      <section id="testimonial">
+      <section
+        id="testimonial"
+        style={{
+          backgroundImage: `url(${Pattern1})`,
+          backgroundSize: "cover",
+          width: "100%",
+          height: "100%",
+          zIndex: "0",
+        }}
+      >
         <Container className="d-flex flex-column gap-4 px-0">
           <Row className="testiTitle d-flex flex-column text-center gap-lg-2 gap-2">
             {/* <p className="highlight">Testimonials</p> */}
