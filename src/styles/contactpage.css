@@ -43,8 +43,14 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  background: #fff;
+  padding: 10px 20px;
   gap: 10px;
-  width: 200px;
+  width: 250px;
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: inset 6px 6px 16px #dedede,
+  inset -8px -8px 16px #ffffff;
 }
 
 .contact-icon svg {

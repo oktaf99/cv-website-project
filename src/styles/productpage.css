@@ -28,9 +28,11 @@
 
 .dropdown .dropdown-toggle {
   background: #ec6e31;
-  padding: 10px;
+  border: 1px solid #ec6e31;
+  padding: 10px 15px;
   width: 150px;
-  font-size: 1rem;
+  font-size: 15px;
+  font-weight:400;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -47,9 +49,18 @@
 }
 
 .btn-category {
+  color: gray;
+  font-size: 14px;
   width: 150px;
   border-radius: 5px;
   padding: 10px;
+}
+
+.btn-category.btn-active {
+  color: #ec6e31;
+  font-weight: 500;
+  background: #fff;
+  border: 1px solid #ec6e31;
 }
 
 .dropdown .dropdown-menu.show {

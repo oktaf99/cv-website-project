@@ -85,7 +85,7 @@ const Product = () => {
             <div className="category-wrapper d-flex align-items-start justify-content-start px-0">
               <Dropdown className="d-flex justify-content-between align-items-center w-100">
                 <h5>Sort by Category</h5>
-                <Dropdown.Toggle id="dropdown-basic" className="btn-danger">
+                <Dropdown.Toggle id="dropdown-basic" variant="danger">
                   {selectTab}
                 </Dropdown.Toggle>
 

@@ -40,7 +40,7 @@ const ContactPage = () => {
           <div className="app-wrapper">
             <div className="contact-icon">
               <FontAwesomeIcon icon={faPhone} />
-              <h5>Call</h5>
+              <h5>Phone Number</h5>
               <a href="">+62 8457348 23</a>
             </div>
             <div className="contact-icon">
@@ -50,12 +50,12 @@ const ContactPage = () => {
             </div>
             <div className="contact-icon">
               <FontAwesomeIcon icon={faPhone} />
-              <h5>Call</h5>
-              <a href="">+62 8457348 23</a>
+              <h5>Instagram</h5>
+              <a href="">@cvproject</a>
             </div>
             <div className="contact-icon">
               <FontAwesomeIcon icon={faBuilding} />
-              <h5>Office</h5>
+              <h5>Address</h5>
               <p>North Jakarta, Jakarta</p>
             </div>
           </div>

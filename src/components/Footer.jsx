@@ -7,7 +7,7 @@ import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faMapPin } from "@fortawesome/free-solid-svg-icons";
 
-import HeroImg3 from "../assets/img/hero3.jpg";
+import ContactImg from "../assets/img/4.jpg";
 
 import "../styles/component.css";
 
@@ -22,8 +22,9 @@ const Footer = () => {
       <section
         id="subscribe"
         style={{
-          backgroundImage: `url(${HeroImg3}), linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6))`,
+          backgroundImage: `url(${ContactImg}), linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6))`,
           backgroundSize: "cover",
+          backgroundPosition: "center",
           backgroundBlendMode: "overlay",
           width: "100%",
           height: "100%",

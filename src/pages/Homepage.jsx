@@ -6,6 +6,7 @@ import { faQuoteLeft } from "@fortawesome/free-solid-svg-icons";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faMapPin } from "@fortawesome/free-solid-svg-icons";
+import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 
 import Faq from "../components/Faq";
 import HeroImg3 from "../assets/img/hero3.jpg";
@@ -35,16 +36,16 @@ const Homepage = () => {
         }}
       >
         <Container className="p-0">
-          <div className="hero-content d-flex flex-column justify-content-center text-center align-items-center gap-2 gap-lg-3 gap-md-3">
+          <div className="hero-content d-flex flex-column justify-content-start align-items-start gap-2 gap-lg-3 gap-md-3">
             <h1
-              data-aos="fade-up"
+              data-aos="fade-right"
               data-aos-duration="900"
               data-aos-easing="ease-in-out"
             >
               One-stop Destination For All Heavy Vehicle
             </h1>
             <p
-              data-aos="fade-up"
+              data-aos="fade-right"
               data-aos-duration="1200"
               data-aos-easing="ease-in-out"
             >
@@ -52,15 +53,27 @@ const Homepage = () => {
               we understand the importance of keeping your heavy vehicles
               running smoothly and efficiently
             </p>
-            <Link
-              to="/product"
-              reloadDocument
-              data-aos="fade-up"
-              data-aos-duration="1400"
-              data-aos-easing="ease-in-out"
-            >
-              Our product
-            </Link>
+            <div className="btn-hero d-flex justice-content-center align-items-center gap-4">
+              <a
+                href="#service"
+                className="m-0"
+                data-aos="fade-right"
+                data-aos-duration="1400"
+                data-aos-easing="ease-in-out"
+              >
+                Our service
+              </a>
+              <Link
+                to="/product"
+                reloadDocument
+                data-aos="fade-right"
+                data-aos-duration="1400"
+                data-aos-easing="ease-in-out"
+              >
+                View Products
+                <FontAwesomeIcon icon={faAngleRight} />
+              </Link>
+            </div>
           </div>
         </Container>
       </section>
@@ -132,7 +145,7 @@ const Homepage = () => {
                 data-aos-duration="1400"
                 data-aos-easing="ease-in-out"
               >
-                Get to know
+                Read more
               </Link>
             </Col>
           </Row>
@@ -173,7 +186,12 @@ const Homepage = () => {
       <section id="offer">
         <Container>
           <Row className="d-flex justify-content-center align-items-center gap-2">
-            <h1 className="display-5 m-0 p-0">Category Section</h1>
+            <h1 className="display-5 m-0 p-0">Our Products</h1>
+          </Row>
+          <Row>
+            <Col></Col>
+            <Col></Col>
+            <Col></Col>
           </Row>
         </Container>
       </section>
