@@ -94,11 +94,8 @@
   height: 550px;
   background: #fff;
   border-radius: 20px;
-  padding: 10px;
   animation-name: slideIn;
   animation-duration: 0.4s;
-  overflow: hidden;
-  /* position: relative; */
   position: absolute;
   top: 50%;
   left: 50%;
@@ -115,17 +112,6 @@
     opacity: 1;
   }
 }
-
-/* a.carousel-control-next,
-a.carousel-control-prev {
-  height: fit-content;
-  width: fit-content;
-  margin: auto;
-}
-
-.modal-image .carousel-indicators {
-  margin: 0;
-} */
 
 .modal-image .swiper-slide {
   display: flex;
@@ -174,10 +160,11 @@ a.carousel-control-prev {
   font-size: 1.5rem;
   font-weight: 400;
   color: #ec6e31;
+  padding: 20px;
 }
 
 .swiper-pagination {
-  height: 15px;
+  height: 16px;
 }
 
 .swiper-pagination .swiper-pagination-bullet {
@@ -192,12 +179,14 @@ a.carousel-control-prev {
   flex-direction: column;
   align-items: start;
   gap: 5px;
-  width: 100%;
+  width: 101%;
   max-height: 150px;
   height: 100%;
-  padding: 12px 10px;
+  padding: 10px 20px;
   position: relative;
-  background: bisque;
+  background: #fff;
+  box-shadow: inset 5px -5px 14px #bebebe, inset -5px 5px 14px #ffffff;
+  border: 1px solid #dedede;
   border-radius: 15px;
 }
 
@@ -209,11 +198,20 @@ a.carousel-control-prev {
 }
 
 .modal-body p {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  gap: 8px;
+  font-size: 1rem;
+  color: gray;
+}
+
+.modal-body p span {
   font-size: 1rem;
   font-weight: 300;
   color: #fff;
   background: #ec6e31;
-  padding: 3px 5px;
+  padding: 3px 10px;
   border-radius: 5px;
   margin: 0;
 }
@@ -224,9 +222,9 @@ a.carousel-control-prev {
 }
 
 .modal-body .btn-modal {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: absolute;
+  bottom: 8%;
+  right: 2%;
   margin-top: 10px;
 }
 
@@ -258,6 +256,32 @@ a.carousel-control-prev {
   width: 32px;
   height: 32px;
   color: salmon;
+}
+
+.modal-dialog .modal-content {
+  margin: auto;
+  max-width: 700px;
+  width: 100%;
+}
+
+.modal-content .modal-body p {
+  font-size: 14px;
+}
+
+.modal-content .modal-header .h4 {
+  font-weight: 600;
+}
+
+.modal-content .modal-footer button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 15px;
+  font-size: 1rem;
+  background: #ec6e31;
+  color: #fff;
+  border-radius: 8px;
 }
 
 /* FAQ SECTION */

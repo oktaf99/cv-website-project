@@ -10,7 +10,7 @@ const Faq = () => {
       <Container className="d-flex flex-column align-items-center gap-3 gap-lg-4">
         <Row>
           <Col className="text-center faq-title position-relative">
-            <h1 className="display-5 m-0">Frequently Asked Questions</h1>
+            <h1 className="display-5 m-0">FAQ</h1>
           </Col>
         </Row>
         <Row className="faq-content row-cols-lg-2 row-cols-1 row-gap-3">

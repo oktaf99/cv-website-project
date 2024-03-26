@@ -71,6 +71,28 @@ import Ifd from "../img/product/automation/automation-ifd.jpeg";
 import Pmc from "../img/product/automation/automation-pmc.jpeg";
 import Roe from "../img/product/automation/automation-roe.jpeg";
 import Vfd from "../img/product/automation/automation-vfd.jpeg";
+// Motor
+import Yas from "../img/product/motor1/motor-y3a.jpeg"
+import Yab from "../img/product/motor1/motor-yab.jpeg"
+import Sa from "../img/product/motor1/motor-sa.jpeg"
+import Ywe from "../img/product/motor1/motor-ywe.jpeg"
+import Ya from "../img/product/motor1/motor-ya.jpeg"
+import Yu from "../img/product/motor1/motor-yu.jpeg"
+import Ys from "../img/product/motor1/motor-y3.jpeg"
+import Ta from "../img/product/motor1/motor-ta.jpeg"
+import Tab from "../img/product/motor1/motor-tab.jpeg"
+import Tal from "../img/product/motor1/motor-tal.jpeg"
+// Spec Motor1
+import SpecYas from "../img/product/motor1/spec-y3a.jpeg"
+import SpecYab from "../img/product/motor1/spec-yab.jpeg"
+import SpecSa from "../img/product/motor1/spec-sa.jpeg"
+import SpecYwe from "../img/product/motor1/spec-ywe.jpeg"
+import SpecYa from "../img/product/motor1/spec-ya.jpeg"
+import SpecYu from "../img/product/motor1/spec-yu.jpeg"
+import SpecYs from "../img/product/motor1/spec-y3.jpeg"
+import SpecTa from "../img/product/motor1/spec-ta.jpeg"
+import SpecTab from "../img/product/motor1/spec-tab.jpeg"
+import SpecTal from "../img/product/motor1/spec-tal.jpeg"
 
 import { faAward } from "@fortawesome/free-solid-svg-icons";
 import { faTruckFast } from "@fortawesome/free-solid-svg-icons";
@@ -356,6 +378,76 @@ export const spareParts = [
     name: "Variator Flange Mounting",
     image: Flange,
     image2: SpecFlange,
+  },
+  {
+    id: 36,
+    category: "Motor",
+    name: "Y3A Series",
+    image: Yas,
+    image2: SpecYas,
+  },
+  {
+    id: 37,
+    category: "Motor",
+    name: "YAB Series",
+    image: Yab,
+    image2: SpecYab,
+  },
+  {
+    id: 38,
+    category: "Motor",
+    name: "SA Series",
+    image: Sa,
+    image2: SpecSa,
+  },
+  {
+    id: 39,
+    category: "Motor",
+    name: "YWE Series",
+    image: Ywe,
+    image2: SpecYwe,
+  },
+  {
+    id: 40,
+    category: "Motor",
+    name: "YA Series",
+    image: Ya,
+    image2: SpecYa,
+  },
+  {
+    id: 41,
+    category: "Motor",
+    name: "Yu Series",
+    image: Yu,
+    image2: SpecYu,
+  },
+  {
+    id: 42,
+    category: "Motor",
+    name: "Y3 Series",
+    image: Ys,
+    image2: SpecYs,
+  },
+  {
+    id: 43,
+    category: "Motor",
+    name: "TA Series",
+    image: Ta,
+    image2: SpecTa,
+  },
+  {
+    id: 44,
+    category: "Motor",
+    name: "TAB Series",
+    image: Tab,
+    image2: SpecTab,
+  },
+  {
+    id: 45,
+    category: "Motor",
+    name: "TAL Series",
+    image: Tal,
+    image2: SpecTal,
   },
 ];
 

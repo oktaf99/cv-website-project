@@ -315,11 +315,10 @@ const Homepage = () => {
                         <FontAwesomeIcon icon={faQuoteLeft} />
                         <p className="comment">{testi.testimonial}</p>
                       </div>
-                      <div className="profile d-flex align-items-center gap-3">
-                        <div className="profile-desc">
-                          <h5>{testi.name}</h5>
-                          <p>{testi.company}</p>
-                        </div>
+
+                      <div className="profile-desc d-flex flex-column justify-content-center align-items-center gap-2">
+                        <h5>{testi.name}</h5>
+                        <p>{testi.company}</p>
                       </div>
                     </div>
                   </SwiperSlide>
