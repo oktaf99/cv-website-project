@@ -257,7 +257,7 @@
   border-radius: 50px;
   background: #ec6e31;
   color: #fff;
-  transition: 1s ease;
+  transition: all 1s ease-in-out;
   border: 1px solid #ec6e31;
 }
 
@@ -266,7 +266,6 @@
   background: rgba(255, 255, 255, 0.07);
   backdrop-filter: blur(6.3px);
   -webkit-backdrop-filter: blur(6.3px);
-  transition: all 0.3s ease-in-out;
 }
 
 /* Offer Section */

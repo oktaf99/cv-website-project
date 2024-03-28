@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { faMapPin } from "@fortawesome/free-solid-svg-icons";
+import { faBuilding } from "@fortawesome/free-solid-svg-icons";
 
 import ContactImg from "../assets/img/4.jpg";
 
@@ -91,16 +91,16 @@ const Footer = () => {
             <Col className="col-lg-3 address d-flex flex-column gap-3 px-0">
               <h4>Contact</h4>
               <div className="icon">
-                <FontAwesomeIcon icon={faEnvelope} />
-                <p>cvproject@gmail.com</p>
+              <FontAwesomeIcon icon={faBuilding} />
+                <p>North Jakarta, Jakarta</p>
               </div>
               <div className="icon">
                 <FontAwesomeIcon icon={faPhone} />
                 <p>+62887234234</p>
               </div>
               <div className="icon">
-                <FontAwesomeIcon icon={faMapPin} />
-                <p>North Jakarta, Jakarta</p>
+                <FontAwesomeIcon icon={faEnvelope} />
+                <p>cvproject@gmail.com</p>
               </div>
             </Col>
           </Row>

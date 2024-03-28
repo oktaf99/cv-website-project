@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faQuoteLeft } from "@fortawesome/free-solid-svg-icons";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { faMapPin } from "@fortawesome/free-solid-svg-icons";
+import { faBuilding } from "@fortawesome/free-solid-svg-icons";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 
 import Faq from "../components/Faq";
@@ -97,7 +97,7 @@ const Homepage = () => {
             </div>
           </div>
           <div className="contactWrapper">
-            <FontAwesomeIcon icon={faMapPin} />
+          <FontAwesomeIcon icon={faBuilding} />
             <div className="desc d-flex flex-column gap-1">
               <h6>Address</h6>
               <p>North Jakarta, Jakarta</p>
@@ -170,8 +170,9 @@ const Homepage = () => {
               <h1 className="display-5">Why choose Us?</h1>
             </div>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
-              hic sit nam excepturi quia placeat quisquam aperiam accusantium
+              Our commitment to excellence and customer satisfaction extends
+              beyond just providing high-quality spare parts. Here are some of
+              the services we offer:
             </p>
           </Row>
 

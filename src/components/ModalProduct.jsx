@@ -16,7 +16,11 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-function MyVerticallyCenteredModal(props) {
+function CenteredModal(props) {
+  // Button Whatsapp
+  const buttonHandler = (url) => {
+    window.open(url, "_blank");
+  };
   return (
     <Modal
       {...props}
@@ -26,19 +30,32 @@ function MyVerticallyCenteredModal(props) {
     >
       <Modal.Header closeButton>
         <Modal.Title id="contained-modal-title-vcenter">
-          How to Book a Product via Chat ?
+          How to Book a Product ?
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <p>
-          Booking a product via WhatsApp from our website is quick and easy.
-          Follow these simple steps:
-        </p>
-        <ol>
-          <li>1. Find Your Desired Product</li>
-          <li>2. Click on the WhatsApp Button</li>
-          <li>3. Initiate the Conversation</li>
-          <li>4. Provide Necessary Details</li>
+        <h6>Follow these steps:</h6>
+        <ol className="m-0 p-0 d-flex flex-column gap-2">
+          <li>
+            Find Your Desired Product. Once you've found the product you wish to
+            book, click on it to view more details, including specifications,
+            pricing, and availability.
+          </li>
+          <li>Take a screenshot of the selected product</li>
+          <li>Click the book button on the product and will direct you to the WhatsApp application</li>
+          <li>
+            Start a new chat in WhatsApp and address it to our business WhatsApp
+            number
+          </li>
+          <li>
+            Attach the screenshot of the product page to your message by tapping
+            the attachment icon and selecting the screenshot.
+          </li>
+          <li>
+            Once you've attached the screenshot, you can add any additional
+            information or questions you have about the product. When you're
+            ready, send the message to us.
+          </li>
         </ol>
       </Modal.Body>
       <Modal.Footer>
@@ -54,10 +71,6 @@ const ModalProduct = ({ activeID, setShowModal }) => {
   const product = spareParts.find((product) => product.id === activeID);
   const [ModalBook, setModalBook] = useState(false);
 
-  // Button Whatsapp
-  const buttonHandler = (url) => {
-    window.open(url, "_blank");
-  };
   //onClick={(e) => setShowModal(false)}
   return (
     <div className="overlay">
@@ -75,7 +88,6 @@ const ModalProduct = ({ activeID, setShowModal }) => {
           </SwiperSlide>
           <SwiperSlide>
             <img src={product.image2} alt="" className="img-detail" />
-            <h4>Specification</h4>
           </SwiperSlide>
         </Swiper>
 
@@ -85,14 +97,7 @@ const ModalProduct = ({ activeID, setShowModal }) => {
             Category : <span>{product.category}</span>
           </p>
           <div className="btn-modal">
-            <button variant="primary" onClick={() => setModalBook(true)}>
-              Book
-            </button>
-            {/* <button
-              onClick={() => buttonHandler("https://wa.me/+6285811482792/")}
-            >
-              Book <FontAwesomeIcon icon={faPhone} />
-            </button> */}
+            <button onClick={() => setModalBook(true)}>Book</button>
           </div>
         </div>
 
@@ -100,10 +105,7 @@ const ModalProduct = ({ activeID, setShowModal }) => {
           <FontAwesomeIcon icon={faXmark} />
         </button>
       </div>
-      <MyVerticallyCenteredModal
-        show={ModalBook}
-        onHide={() => setModalBook(false)}
-      />
+      <CenteredModal show={ModalBook} onHide={() => setModalBook(false)} />
     </div>
   );
 };

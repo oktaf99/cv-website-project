@@ -542,8 +542,8 @@ export const faq = [
   {
     id: 4,
     eventKey: 3,
-    title: "How can I place an order?",
-    desc: "Placing an order with Heavy Vehicle Parts Hub is easy. Simply browse our online catalog, add the parts you need to your shopping cart, and proceed to checkout. You can choose from a variety of payment options, including credit card, PayPal, and more. If you need assistance with placing an order, our customer service team is available to help.",
+    title: "How to Book a Product ?",
+    desc: "Find Your Desired Product. Take a screenshot of the selected product. Click the book button on the modal.Start a new chat in WhatsApp and address it to our business WhatsApp number. Attach the screenshot of the product page to your message by tapping the attachment icon and selecting the screenshot from your device's gallery or camera roll. Once you've attached the screenshot, you can add any additional information or questions you have about the product. When you're ready, send the message to us.",
   },
   {
     id: 5,

@@ -29,8 +29,8 @@
 .dropdown .dropdown-toggle {
   background: #ec6e31;
   border: 1px solid #ec6e31;
-  padding: 10px 15px;
-  width: 150px;
+  padding: 12px 14px;
+  width: fit-content;
   font-size: 15px;
   font-weight:400;
   display: flex;
@@ -250,7 +250,6 @@
 
   .dropdown .dropdown-toggle {
     padding: 8px 10px;
-    width: 140px;
     font-size: 15px;
   }
 
@@ -309,7 +308,6 @@
 
   .dropdown .dropdown-toggle {
     font-size: 14px;
-    width: 130px;
     padding: 8px 10px;
   }
 
@@ -376,7 +374,6 @@
   }
 
   .dropdown .dropdown-toggle {
-    width: 115px;
     font-size: 12px;
     padding: 8px;
   }
